@@ -26,7 +26,7 @@ import os
 import sys
 import zipfile
 
-addonlist = ['script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
+addonlist = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
 excludes = ['.git', '.idea', '.gitattributes']
 BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
