@@ -28,7 +28,9 @@ import zipfile
 
 addonlist = ['script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
 excludes = ['.git', '.idea', '.gitattributes']
-zipdir = 'zip'
+BASEDIR = '../addons'
+WORKINGDIR = os.getcwd()
+ZIPDIR = os.path.join(WORKINGDIR, 'zip')
 zipext = '.zip'
 
 # Compatibility with 3.0, 3.1 and 3.2 not supporting u"" literals
@@ -59,13 +61,15 @@ class Generator:
 
 
     def _create_zipfiles(self):
-        if not os.path.exists(zipdir): os.makedirs(zipdir)
+        os.chdir(BASEDIR)
+        if not os.path.exists(ZIPDIR): os.makedirs(ZIPDIR)
         addons = os.listdir('.')
 
         for addon in addons:
             if addon in addonlist:
+                print addon
                 try:
-                    _file = os.path.join(zipdir, addon + zipext)
+                    _file = os.path.join(ZIPDIR, addon + zipext)
                     addon_zip = zipfile.ZipFile(_file, 'w')
                     for addon_root, dirs, files in os.walk(addon):
                         dirs[:] = [d for d in dirs if d not in excludes]
@@ -79,7 +83,8 @@ class Generator:
                     print("An error occurred while creating %s file!\n%s" % (_file, e))
 
     def _generate_addons_file(self):
-        addons = os.listdir(".")
+        os.chdir(BASEDIR)
+        addons = os.listdir('.')
         # final addons text
         addons_xml = u("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<addons>\n")
         # loop thru and add each addons addon.xml file
@@ -89,6 +94,7 @@ class Generator:
                     # skip any file or .svn folder or .git folder
                     if ( not os.path.isdir(addon) or addon == ".svn" or addon == ".git" ): continue
                     _path = os.path.join(addon, "addon.xml")
+                    print _path
                     xml_lines = open(_path, "r").read().splitlines()
 
                     addon_xml = ""
@@ -111,6 +117,7 @@ class Generator:
 
     def _generate_md5_file(self):
         # create a new md5 hash
+        os.chdir(WORKINGDIR)
         try:
             import md5
             m = md5.new(open("addons.xml", "r").read()).hexdigest()
@@ -128,7 +135,7 @@ class Generator:
     def _save_file(self, data, file):
         try:
             # write data to the file (use b for Python 3)
-            open(file, "wb").write(data)
+            open(os.path.join(WORKINGDIR, file), "wb").write(data)
         except Exception as e:
             # oops
             print("An error occurred saving %s file!\n%s" % (file, e))
