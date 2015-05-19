@@ -67,7 +67,6 @@ class Generator:
 
         for addon in addons:
             if addon in addonlist:
-                print addon
                 try:
                     _file = os.path.join(ZIPDIR, addon + zipext)
                     addon_zip = zipfile.ZipFile(_file, 'w')
@@ -94,7 +93,6 @@ class Generator:
                     # skip any file or .svn folder or .git folder
                     if ( not os.path.isdir(addon) or addon == ".svn" or addon == ".git" ): continue
                     _path = os.path.join(addon, "addon.xml")
-                    print _path
                     xml_lines = open(_path, "r").read().splitlines()
 
                     addon_xml = ""
