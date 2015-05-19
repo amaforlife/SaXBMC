@@ -26,12 +26,12 @@ import os
 import sys
 import zipfile
 
-addonlist = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
-excludes = ['.git', '.idea', '.gitattributes']
+MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
+EXCLUDES = ['.git', '.idea', '.gitattributes']
 BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
 ZIPDIR = os.path.join(WORKINGDIR, 'zip')
-zipext = '.zip'
+ZIPEXT = '.zip'
 
 # Compatibility with 3.0, 3.1 and 3.2 not supporting u"" literals
 if sys.version < '3':
@@ -66,12 +66,12 @@ class Generator:
         addons = os.listdir('.')
 
         for addon in addons:
-            if addon in addonlist:
+            if addon in MY_ADDONS:
                 try:
-                    _file = os.path.join(ZIPDIR, addon + zipext)
+                    _file = os.path.join(ZIPDIR, addon + ZIPEXT)
                     addon_zip = zipfile.ZipFile(_file, 'w')
                     for addon_root, dirs, files in os.walk(addon):
-                        dirs[:] = [d for d in dirs if d not in excludes]
+                        dirs[:] = [d for d in dirs if d not in EXCLUDES]
                         for filename in files:
                             if os.path.basename(filename)[0:1] == '.' or os.path.basename(filename)[-2:] == 'md':
                                 continue
@@ -88,7 +88,7 @@ class Generator:
         addons_xml = u("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<addons>\n")
         # loop thru and add each addons addon.xml file
         for addon in addons:
-            if addon in addonlist:
+            if addon in MY_ADDONS:
                 try:
                     # skip any file or .svn folder or .git folder
                     if ( not os.path.isdir(addon) or addon == ".svn" or addon == ".git" ): continue
