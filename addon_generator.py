@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # *
 # *  Copyright (C) 2012-2013 Garrett Brown
 # *  Copyright (C) 2010      j48antialias
@@ -19,6 +20,7 @@
 # *
 # *  Based on code by j48antialias:
 # *  https://anarchintosh-projects.googlecode.com/files/addons_xml_generator.py
+# *  Modified (Globals, Zip-Part) by b-jesch
 
 """ addons.xml generator """
 
@@ -106,9 +108,9 @@ class Generator:
                             addon_xml += '\t' + line.rstrip() + "\n"
                     # we succeeded so add to our final addons.xml text
                     addons_xml += addon_xml.rstrip() + "\n\n"
-                except Exception as e:
+                except Exception, e:
                     # missing or poorly formatted addon.xml
-                    print("Excluding %s for %s" % ( _path, e ))
+                    print("Excluding %s due reason: %s" % ( _path, e ))
 
         addons_xml = addons_xml.strip() + u("\n</addons>\n")
         self._save_file(addons_xml.encode("UTF-8"), file="addons.xml")
@@ -121,7 +123,7 @@ class Generator:
             m = md5.new(open("addons.xml", "r").read()).hexdigest()
         except ImportError:
             import hashlib
-            m = hashlib.md5(open("addons.xml", "r", encoding="UTF-8").read().encode("UTF-8")).hexdigest()
+            m = hashlib.md5(open("addons.xml", "r").read().encode("UTF-8")).hexdigest()
 
         # save file
         try:
