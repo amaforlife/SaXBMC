@@ -27,6 +27,7 @@
 import os
 import sys
 import zipfile
+from xml.dom import minidom
 
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
@@ -71,15 +72,26 @@ class Generator:
                 try:
                     _dir = os.path.join(WORKINGDIR, ZIPDIR, addon)
                     if not os.path.exists(_dir): os.makedirs(_dir)
-                    _file = os.path.join(_dir, addon + ZIPEXT)
+                    _file = os.path.join(_dir, addon)
                     addon_zip = zipfile.ZipFile(_file, 'w')
                     for addon_root, dirs, files in os.walk(addon):
                         dirs[:] = [d for d in dirs if d not in EXCLUDES]
                         for filename in files:
                             if os.path.basename(filename)[0:1] == '.' or os.path.basename(filename)[-2:] == 'md':
                                 continue
+                            if os.path.basename(filename) == 'addon.xml':
+                                # parse this
+                                _xmldoc = minidom.parse(os.path.join(addon_root, filename))
+                                _vers = _xmldoc.getElementsByTagName('addon')
+                                for _attr in  _vers: _v = _attr.getAttribute('version')
+                                print _file, _v
+
                             addon_zip.write(os.path.join(addon_root, filename), compress_type=zipfile.ZIP_DEFLATED)
                     addon_zip.close()
+                    _final = _file + '-' + _v + ZIPEXT
+                    if os.path.exists(_final): os.remove(_final)
+                    os.rename(_file, _final)
+
                 except Exception as e:
                     # oops
                     print("An error occurred while creating %s file!\n%s" % (_file, e))
