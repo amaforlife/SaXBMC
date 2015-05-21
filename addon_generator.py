@@ -32,7 +32,7 @@ MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callm
 EXCLUDES = ['.git', '.idea', '.gitattributes']
 BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
-ZIPDIR = os.path.join(WORKINGDIR, 'zip')
+ZIPDIR = 'zip'
 ZIPEXT = '.zip'
 
 # Compatibility with 3.0, 3.1 and 3.2 not supporting u"" literals
@@ -64,13 +64,14 @@ class Generator:
 
     def _create_zipfiles(self):
         os.chdir(BASEDIR)
-        if not os.path.exists(ZIPDIR): os.makedirs(ZIPDIR)
         addons = os.listdir('.')
 
         for addon in addons:
             if addon in MY_ADDONS:
                 try:
-                    _file = os.path.join(ZIPDIR, addon + ZIPEXT)
+                    _dir = os.path.join(WORKINGDIR, ZIPDIR, addon)
+                    if not os.path.exists(_dir): os.makedirs(_dir)
+                    _file = os.path.join(_dir, addon + ZIPEXT)
                     addon_zip = zipfile.ZipFile(_file, 'w')
                     for addon_root, dirs, files in os.walk(addon):
                         dirs[:] = [d for d in dirs if d not in EXCLUDES]
