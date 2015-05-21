@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # *
 # *  Copyright (C) 2012-2013 Garrett Brown
@@ -52,6 +53,8 @@ class Generator:
         Generates a new addons.xml file from each addons addon.xml file
         and a new addons.xml.md5 hash file. Must be run from the root of
         the checked-out repo. Only handles single depth folder structure.
+        Additional creates versioned zipfiles in a zipfolder from a project
+        structure.
     """
 
     def __init__(self):
