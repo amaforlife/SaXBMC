@@ -63,7 +63,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.TVH.Manager"
+	<addon id="service.tvh.manager"
 	       name="TVHeadend Power and Recording Management"
 	       version="0.2.11"
 	       provider-name="Birger Jesch">
