@@ -28,6 +28,7 @@
 import os
 import sys
 import zipfile
+import shutil
 from xml.dom import minidom
 
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor', 'service.sleepy.watchdog', 'service.tvh.manager']
@@ -82,6 +83,8 @@ class Generator:
                         for filename in files:
                             if os.path.basename(filename)[0:1] == '.' or os.path.basename(filename)[-2:] == 'md':
                                 continue
+                            if os.path.basename(filename) == 'changelog.txt':
+                                shutil.copyfile(os.path.join(addon_root, filename), os.path.join(_dir, 'changelog.txt'))
                             if os.path.basename(filename) == 'addon.xml':
                                 # parse this
                                 _xmldoc = minidom.parse(os.path.join(addon_root, filename))
