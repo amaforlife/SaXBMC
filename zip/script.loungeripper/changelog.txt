@@ -1,3 +1,6 @@
+[B]0.1.5[/B]
+  - Speed up Rip/Encoder Loops
+
 [B]0.1.4[/B]
   - Optimized process handling, broken/incomplete toolchains can be
     continued afterwards

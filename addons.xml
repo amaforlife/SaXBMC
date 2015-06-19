@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="repository.saxbmc" name="SaXBMC Addon Repo" version="1.0.1" provider-name="Birger Jesch">
-		<extension point="xbmc.addon.repository" name="SaXBMC Addon Repo">
-			<info compressed="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/zip/</datadir>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Some useful services and scripts for use within Kodi</summary>
-			<description lang="en">Get some useful services and scripts that makes life with kodi easier.</description>
-			<summary lang="de">Nützliche Dienste und Programme für Kodi</summary>
-			<description lang="de">Installiere nützliche Dienste oder Programme, die Dir das Leben mit Kodi einfacher machen.</description>
-			<disclaimer></disclaimer>
-			<platform>all</platform>
-		</extension>
-	</addon>
-
-	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.4" provider-name="Birger Jesch">
+	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.5" provider-name="Birger Jesch">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 		</requires>
@@ -39,60 +23,10 @@
 		</extension>
 	</addon>
 
-	<addon id="service.tvh.manager"
-	       name="TVHeadend Power and Recording Management"
-	       version="0.2.12"
-	       provider-name="Birger Jesch">
-	  <extension point="xbmc.service"
-	             library="default.py" start="[login|startup]" />
-	  <extension point="xbmc.python.script"
-		     library="default.py" />
-	  <extension point="xbmc.addon.metadata">
-	    <platform>linux</platform>
-	    <summary lang="en">TVHeadend Power Management</summary>
-	    <summary lang="de">Power-Management für TVHeadend</summary>
-	    <description lang="en">Poweroff management for current active recordings and wakeup procedures for future schedules using the XML-Interface of TVHeadend. This plugin delivers optional Emails via SMTP if an automatic scheduled Recording ended successfully. The plugin starts the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
-	    <description lang="de">PowerOff-Management für aktuell laufende Aufnahmen und Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung des XML-Interfaces von TVHeadend. Das Plugin versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
-	    <description lang="pl">Program zarządzający włączeniem i wyłączeniem systemu dla bieżących aktywnych nagrań ustawionych w harmonogramie interfejsu XML programu : TVHeadend. Wtyczka oferuje opcjonalnie wysłanie wiadomości e-mail za pośrednictwem protokołu SMTP, jeśli automatyczne nagrywanie zakończyło się powodzeniem. Wtyczka może także uruchamiać system okresowo w czasie zdefiniowanym przez użytkownika dla uaktualnienia EPG, jeśli jest dłuższy czas braku aktywności systemu.</description>
-	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine Haftung für nicht gesetzte Timer, nicht durchgeführte Aufnahmen und andere Seiteneffekte!</disclaimer>
-	    <disclaimer lang="en">Use at your own risk. No liability for not set timers, lack of recording and other side effects!</disclaimer>
-	    <disclaimer lang="pl">Używasz na własne ryzyko. Nie ponosimy odpowiedzialności za nieprawidłowe nastawienia czasu nagrania, braku nagrania i innych skutków ubocznych!</disclaimer>
-	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum>http://forum.xbmc.org/showthread.php?tid=115758</forum>
-	    <website>http://vdr4bj1.no-ip.org</website>
-	    <email>birger.jesch@gmail.com</email>
-	    <source></source>
-	  </extension>
-	</addon>
-
-	<addon id="service.sleepy.watchdog"
-	       name="Sleepy Watchdog"
-	       version="0.1.6"
-	       provider-name="Birger Jesch and _nico, thanks to Martin Schlosser">
-	  <extension point="xbmc.service"
-	             library="default.py" start="[login|startup]" />
-	  <extension point="xbmc.python.script"
-		     library="default.py" />
-	  <extension point="xbmc.addon.metadata">
-	    <platform>all</platform>
-	    <summary lang="en">Sleepy Watchdog - he's watching while You sleep</summary>
-	    <summary lang="de">Sleepy Watchdog - er passt auf, während Du schläfst</summary>
-	    <description lang="en">This Idle Timer management performs defined actions after an adjusted amount of inactivity time. Those actions are stop playing Audio, Video or TV for example or some actions to execute shutdown variations like suspend, reboot poweroff or hibernate.</description>
-	    <description lang="de">Dieser Timer führt vorher definierte Aktionen nach einer einstellbaren Inaktivitätszeit aus. Die Aktionen können zum Beispiel das Stoppen von Audio, Video oder TV-Streams sein, aber auch das Herunterfahren des Systems in verschiedenen Modi (Suspend, Reboot, PowerOff, Bereitschaft) wird angeboten.</description>
-	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Dieser Dienst könnte mit anderen Diensten (z.B. Aufnahmedienste) kollidieren.</disclaimer>
-	    <disclaimer lang="en">Use at your own risk. This service could conflict to other services (e.g recording services).</disclaimer>
-	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum>http://www.kodinerds.net/index.php/Thread/43876-RELEASE-Sleepy-WatchDog-Wenn-alles-vor-der-Glotze-schl%C3%A4ft/</forum>
-	    <website>http://vdr4bj1.no-ip.org</website>
-	    <email></email>
-	    <source></source>
-	  </extension>
-	</addon>
-
 	<addon id="service.fritzbox.callmonitor"
 	       name="Fritzbox Callmonitor"
 	       version="1.3.9"
-	       provider-name="Birger Jesch, thanks to F. Epperlein">
+	       provider-name="Birger Jesch, thanks to F. Epperlein, A. Knöbel">
 	  <requires>
 	    <import addon="script.module.requests" version="2.3.0" />
 	  </requires>
@@ -127,5 +61,47 @@
 	    <email>birger.jesch@gmail.com</email>
 	    <source></source>
 	  </extension>
+	</addon>
+
+	<addon id="service.tvh.manager"
+	       name="TVHeadend Power and Recording Management"
+	       version="0.2.12"
+	       provider-name="Birger Jesch">
+	  <extension point="xbmc.service"
+	             library="default.py" start="[login|startup]" />
+	  <extension point="xbmc.python.script"
+		     library="default.py" />
+	  <extension point="xbmc.addon.metadata">
+	    <platform>linux</platform>
+	    <summary lang="en">TVHeadend Power Management</summary>
+	    <summary lang="de">Power-Management für TVHeadend</summary>
+	    <description lang="en">Poweroff management for current active recordings and wakeup procedures for future schedules using the XML-Interface of TVHeadend. This plugin delivers optional Emails via SMTP if an automatic scheduled Recording ended successfully. The plugin starts the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
+	    <description lang="de">PowerOff-Management für aktuell laufende Aufnahmen und Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung des XML-Interfaces von TVHeadend. Das Plugin versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
+	    <description lang="pl">Program zarządzający włączeniem i wyłączeniem systemu dla bieżących aktywnych nagrań ustawionych w harmonogramie interfejsu XML programu : TVHeadend. Wtyczka oferuje opcjonalnie wysłanie wiadomości e-mail za pośrednictwem protokołu SMTP, jeśli automatyczne nagrywanie zakończyło się powodzeniem. Wtyczka może także uruchamiać system okresowo w czasie zdefiniowanym przez użytkownika dla uaktualnienia EPG, jeśli jest dłuższy czas braku aktywności systemu.</description>
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine Haftung für nicht gesetzte Timer, nicht durchgeführte Aufnahmen und andere Seiteneffekte!</disclaimer>
+	    <disclaimer lang="en">Use at your own risk. No liability for not set timers, lack of recording and other side effects!</disclaimer>
+	    <disclaimer lang="pl">Używasz na własne ryzyko. Nie ponosimy odpowiedzialności za nieprawidłowe nastawienia czasu nagrania, braku nagrania i innych skutków ubocznych!</disclaimer>
+	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	    <forum>http://forum.xbmc.org/showthread.php?tid=115758</forum>
+	    <website>http://vdr4bj1.no-ip.org</website>
+	    <email>birger.jesch@gmail.com</email>
+	    <source></source>
+	  </extension>
+	</addon>
+
+	<addon id="repository.saxbmc" name="SaXBMC Addon Repo" version="1.0.1" provider-name="Birger Jesch">
+		<extension point="xbmc.addon.repository" name="SaXBMC Addon Repo">
+			<info compressed="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/zip/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Some useful services and scripts for use within Kodi</summary>
+			<description lang="en">Get some useful services and scripts that makes life with kodi easier.</description>
+			<summary lang="de">Nützliche Dienste und Programme für Kodi</summary>
+			<description lang="de">Installiere nützliche Dienste oder Programme, die Dir das Leben mit Kodi einfacher machen.</description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
 	</addon>
 </addons>
