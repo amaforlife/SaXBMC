@@ -1,3 +1,12 @@
+[B]0.1.7[/B]
+  - Addon settings simplified, logging option removed, code cleaning
+
+[B]0.1.6[/B]
+  - Optimized encoder settings for higher encode quality
+
+[B]0.1.5[/B]
+  - Speed up Rip/Encoder Loops
+
 [B]0.1.4[/B]
   - Optimized process handling, broken/incomplete toolchains can be
     continued afterwards
