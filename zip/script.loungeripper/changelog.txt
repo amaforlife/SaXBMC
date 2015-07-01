@@ -1,3 +1,6 @@
+[B]0.1.9[/B]
+  - Fix unicode exception in filenames with special chars.
+
 [B]0.1.8[/B]
   - Improved file handling. Delete only files from temp folder which
     are not needed anymore.
