@@ -63,7 +63,7 @@
 
 	<addon id="service.tvh.manager"
 	       name="TVHeadend Power and Recording Management"
-	       version="0.2.13"
+	       version="0.2.14"
 	       provider-name="Birger Jesch">
 	  <extension point="xbmc.service"
 	             library="default.py" start="[login|startup]" />

@@ -1,5 +1,8 @@
 CHANGELOG
 
+[B]0.2.14[/B]
+- Translations updated
+
 [B]0.2.13[/B]
 - Index bug fixed when using NVRAM as wakeup (rarely used)
 
