@@ -1,3 +1,7 @@
+[B]0.1.6[/B]
+- handle socket error exception in interface module
+- minor bugfixes
+
 [B]0.1.4[/B]
 - smaller improvements
 
