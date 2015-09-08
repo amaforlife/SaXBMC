@@ -1,11 +1,15 @@
 CHANGELOG
 
+[B]0.3.2[/B]
+- Bugfix
+- minor code adjustments
+
 [B]0.3.1[/B]
 - new event handling on startup|login|poweroff|restart with process parameters
 - IMPORTANT: changes to remote.xml! See README.pdf for additional needed parameters.
 - unused code removed
 - procedures for addon-id.ctl removed
-- no more additional logging into separate logfile
+- additional logging into separate logfile removed
 
 [B]0.2.14[/B]
 - Translations updated
