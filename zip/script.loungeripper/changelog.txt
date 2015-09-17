@@ -1,3 +1,6 @@
+[B]0.1.10[/B]
+  - minor adjustments in encoder settings of HandBrakeCLI
+
 [B]0.1.9[/B]
   - Fix unicode exception in filenames with special chars.
 

@@ -38,7 +38,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.9" provider-name="Birger Jesch">
+	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.10" provider-name="Birger Jesch">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 		</requires>
@@ -56,7 +56,7 @@
 			<license></license>
 			<forum></forum>
 			<website></website>
-			<email></email>
+			<email>birger.jesch@gmail.com</email>
 			<source>https://github.com/b-jesch/script.loungeripper.git</source>
 		</extension>
 	</addon>
