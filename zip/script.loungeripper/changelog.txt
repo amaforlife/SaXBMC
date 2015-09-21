@@ -1,3 +1,7 @@
+[B]0.1.12[/B]
+  - Improved media detection on Windows OS
+  - Bugfixes
+
 [B]0.1.11[/B]
   - Some major code changes for Windows OS based systems
   - Setting for selection of CPU usage removed
