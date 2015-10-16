@@ -1,3 +1,6 @@
+[B]0.1.15[/B]
+ - more encoding quality levels (very high, high, medium, moderate, low)
+
 [B]0.1.13[/B]
  - Improved copy algorithm
  - switched to Transifex language files (*.po)
