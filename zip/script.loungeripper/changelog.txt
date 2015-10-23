@@ -1,3 +1,10 @@
+
+[B]0.1.17[/B]
+ - Shows now remaining time if encoding is in progress
+
+[B]0.1.16[/B]
+ - Track name prefered over volume name for naming of destination folders and files
+
 [B]0.1.15[/B]
  - more encoding quality levels (very high, high, medium, moderate, low)
 
