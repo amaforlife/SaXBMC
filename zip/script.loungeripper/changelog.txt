@@ -1,3 +1,5 @@
+[B]0.1.18[/B]
+ - Bugfixes
 
 [B]0.1.17[/B]
  - Shows now remaining time if encoding is in progress

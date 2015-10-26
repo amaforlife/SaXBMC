@@ -38,7 +38,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.17" provider-name="Birger Jesch">
+	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.18" provider-name="Birger Jesch">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 		</requires>
@@ -107,7 +107,7 @@
 
 	<addon id="service.fritzbox.callmonitor"
 	       name="Fritzbox Callmonitor"
-	       version="1.4.1"
+	       version="1.4.2"
 	       provider-name="Birger Jesch, thanks to F. Epperlein">
 	  <requires>
 	    <import addon="script.module.requests" version="2.3.0" />
