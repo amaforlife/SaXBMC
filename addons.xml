@@ -38,7 +38,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.18" provider-name="Birger Jesch">
+	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.19" provider-name="Birger Jesch">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 		</requires>
@@ -103,6 +103,25 @@
 	    <email></email>
 	    <source>https://github.com/b-jesch/service.sleepy.watchdog</source>
 	  </extension>
+	</addon>
+
+	<addon id="service.kn.switchtimer" name="Aeon KN Switchtimer" provider-name="BJ1" version="1.0.7">
+	    <requires>
+	        <import addon="xbmc.addon" version="12.0.0"/>
+	        <import addon="xbmc.python" version="2.7.0"/>
+	    </requires>
+	    <extension point="xbmc.service" library="service.py" start="login" />
+	    <extension point="xbmc.python.script" library="handler.py" />
+	    <extension point="xbmc.addon.metadata">
+	        <summary lang="en">A switch timer for Aeon Flex</summary>
+	        <summary lang="de">Ein Umschalttimer für den Aeon Flex Skin</summary>
+	        <description lang="en">This Service provides switch timers supported by the PVR section of the skin Aeon Flex.</description>
+	        <description lang="de">Dieser Service stellt Umschalttimer zur Verfügung, die vom PVR-Bereich des Skins Aeon Flex unterstützt werden.</description>
+	        <disclaimer lang="en">Use at your own risk.</disclaimer>
+	        <disclaimer lang="de">Benutzung auf eigene Gefahr</disclaimer>
+	        <platform>all</platform>
+	        <language/>
+	    </extension>
 	</addon>
 
 	<addon id="service.fritzbox.callmonitor"
