@@ -1,3 +1,10 @@
+[B]0.1.20[/B]
+ - minor bugfixes
+ - Option for scanning/updating library after processing added
+
+[B]0.1.19[/B]
+ - optimized info messages while processing
+
 [B]0.1.18[/B]
  - Bugfixes
 
