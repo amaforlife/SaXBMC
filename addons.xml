@@ -121,7 +121,7 @@
 		</extension>
 	</addon>
 
-	<addon id="service.kn.switchtimer" name="Aeon KN Switchtimer" provider-name="BJ1" version="1.0.7">
+	<addon id="service.kn.switchtimer" name="Aeon KN Switchtimer" provider-name="BJ1" version="1.0.8">
 	    <requires>
 	        <import addon="xbmc.addon" version="12.0.0"/>
 	        <import addon="xbmc.python" version="2.7.0"/>
