@@ -58,7 +58,7 @@
 		</extension>
 	</addon>
 
-	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.3" provider-name="Birger Jesch">
+	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.4" provider-name="Birger Jesch">
 	  <extension point="xbmc.service" library="default.py" start="[login|startup]" />
 	  <extension point="xbmc.python.script" library="default.py" />
 	  <extension point="xbmc.addon.metadata">
@@ -102,7 +102,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="1.0.12">
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="1.1.0">
 	    <requires>
 	        <import addon="xbmc.addon" version="12.0.0"/>
 	        <import addon="xbmc.python" version="2.7.0"/>

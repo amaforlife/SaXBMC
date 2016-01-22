@@ -1,5 +1,8 @@
 CHANGELOG
 
+[B]0.3.4[/B]
+- settings fixed, unused settings removed
+
 [B]0.3.3[/B]
 - use connection settings of TVHeadend PVR client
 - new Icons
