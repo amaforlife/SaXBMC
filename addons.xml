@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+	<addon id="service.lgtv.remote" name="LG Smart TV 3D Switch" version="0.1.12" provider-name="Birger Jesch">
+	  <extension point="xbmc.service" library="default.py" start="login" />
+	  <extension point="xbmc.python.script" library="scan.py" />
+	  <extension point="xbmc.addon.metadata">
+	    <platform>all</platform>
+	    <summary lang="en">LG Smart TV 3D Switch - for both 2011 and 2012 series</summary>
+	    <description lang="en">This addon turns your LG Smart TV into 3D mode automatically over the network if a tagged '3D' content is playing. For this, the TV device must be integrated in your home network properly. This addon supports the old 2011 series and the newer 2012 series too.</description>
+	    <summary lang="de">LG Smart TV 3D Switch - für die 2011er und 2012er Serie</summary>
+	    <description lang="de">Dieses Addon schaltet Dein LG Smart TV-Gerät über das Netzwerk in den 3D-Modus, sobald ein als '3D' markierter Inhalt abgespielt wird. Der LG Smart TV muss dazu korrekt in das Heimnetzwerk eingebunden sein. Es werden sowohl die Modelle bis 2011 als auch die nachfolgenden 2012er unterstützt.</description>
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine unbekannten Code-Sequenzen verwenden!</disclaimer>
+	    <disclaimer lang="en">Use at your own risk. Don't use unknown code sequences!</disclaimer>
+	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	    <forum></forum>
+	    <website>http://vdr4bj1.no-ip.org</website>
+	    <email>birger.jesch@gmail.com</email>
+	    <source>https://github.com/b-jesch/service.lgtv.remote</source>
+	  </extension>
+	</addon>
+
+	<addon id="repository.saxbmc" name="SaXBMC Addon Repo" version="1.0.1" provider-name="Birger Jesch">
+		<extension point="xbmc.addon.repository" name="SaXBMC Addon Repo">
+			<info compressed="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/zip/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Some useful services and scripts for use within Kodi</summary>
+			<description lang="en">Get some useful services and scripts that makes life with kodi easier.</description>
+			<summary lang="de">Nützliche Dienste und Programme für Kodi</summary>
+			<description lang="de">Installiere nützliche Dienste oder Programme, die Dir das Leben mit Kodi einfacher machen.</description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
 	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.20" provider-name="Birger Jesch">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
@@ -21,42 +56,6 @@
 			<email>birger.jesch@gmail.com</email>
 			<source>https://github.com/b-jesch/script.loungeripper.git</source>
 		</extension>
-	</addon>
-
-	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="1.4.4"
-	       provider-name="Birger Jesch, thanks to F. Epperlein">
-	  <requires>
-	    <import addon="script.module.requests" version="2.3.0" />
-	    <import addon="script.module.pil" version="1.1.7" />
-	  </requires>
-	  <extension point="xbmc.service" library="default.py" start="login" />
-	  <extension point="xbmc.addon.metadata">
-	    <platform>all</platform>
-	    <summary lang="en">Fritzbox Callmonitor</summary>
-	    <description lang="en">This addon displays incoming and outgoing calls from a Fritzbox connecting on port 1012. To enable the listen port in your Fritzbox enter the following code into your telephone.
-	#96*5* Callmonitor-Support enabled.
-	#96*4* Callmonitor-Support disabled.</description>
-	
-	    <summary lang="de">Fritzbox Anrufmonitor</summary>
-	    <description lang="de">Dieses Addon zeigt eingehende/ausgehende Anrufe auf der Fritzbox an. Dazu muss der Port 1012 auf der Fritzbox freigeschaltet sein. Geben Sie dazu auf dem Telefon folgenden Telefoncode ein.
-	#96*5* Anrufmonitor-Support aktivieren.
-	#96*4* Anrufmonitor-Support deaktivieren.</description>
-	
-	    <summary lang="nl">Fritzbox Oproepmonitor</summary>
-	    <description lang="nl">Deze Addon toont de binnenkomende/uitgaande oproepen van een Fritzbox op port 1012. Om de port aan te zetten, toets de volgende code in op je telefoon.
-	#96*5* Oproepmonitor-Support activeren.
-	#96*4* Oproepmonitor-Support deactivieren.</description>
-	
-	    <disclaimer lang="de">Benutzung auf eigene Gefahr</disclaimer>
-	    <disclaimer lang="en">Use at your own risk</disclaimer>
-	    <disclaimer lang="nl">Gebruik op eigen risico</disclaimer>
-	
-	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum>http://www.vdr-portal.de/board60-linux/board62-software/board95-xbmc/121034-announce-fritz-box-anrufmonitor-f%C3%BCr-xbmc/</forum>
-	    <website>http://vdr4bj1.no-ip.org</website>
-	    <email>birger.jesch@gmail.com</email>
-	    <source></source>
-	  </extension>
 	</addon>
 
 	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.4" provider-name="Birger Jesch">
@@ -103,34 +102,19 @@
 	  </extension>
 	</addon>
 
-	<addon id="repository.saxbmc" name="SaXBMC Addon Repo" version="1.0.1" provider-name="Birger Jesch">
-		<extension point="xbmc.addon.repository" name="SaXBMC Addon Repo">
-			<info compressed="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/zip/</datadir>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Some useful services and scripts for use within Kodi</summary>
-			<description lang="en">Get some useful services and scripts that makes life with kodi easier.</description>
-			<summary lang="de">Nützliche Dienste und Programme für Kodi</summary>
-			<description lang="de">Installiere nützliche Dienste oder Programme, die Dir das Leben mit Kodi einfacher machen.</description>
-			<disclaimer></disclaimer>
-			<platform>all</platform>
-		</extension>
-	</addon>
-
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="1.1.1">
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="1.1.2">
 	    <requires>
-	        <import addon="xbmc.addon" version="12.0.0"/>
-	        <import addon="xbmc.python" version="2.7.0"/>
+	        <import addon="xbmc.addon" version="14.0.0"/>
+	        <import addon="xbmc.python" version="2.19.0"/>
+	        <import addon="xbmc.json" version="6.20.0"/>
 	    </requires>
 	    <extension point="xbmc.service" library="service.py" start="login" />
 	    <extension point="xbmc.python.script" library="handler.py" />
 	    <extension point="xbmc.addon.metadata">
-	        <summary lang="en">A switch timer for Aeon Flex</summary>
-	        <summary lang="de">Ein Umschalttimer für den Aeon Flex Skin</summary>
-	        <description lang="en">This Service provides switch timers currently supported by the PVR module of the skin Aeon Flex.</description>
-	        <description lang="de">Dieser Service stellt Umschalttimer zur Verfügung, die aktuell vom PVR-Modul des Skins Aeon Flex unterstützt werden.</description>
+	        <summary lang="en">A switch timer for the PVR module of Kodi</summary>
+	        <summary lang="de">Ein Umschalttimer für das PVR-Modul von Kodi</summary>
+	        <description lang="en">Switching with the KN switchtimer from every point of view inside Kodi to a tv or radio broadcast at a given time - no more miss your favorite shows or sports events on tv.</description>
+	        <description lang="de">Mit dem KN Switchtimer schaltest Du auf Deine programmierte Sendung zur richtigen Zeit um - egal wo Du Dich gerade befindest. Nie wieder die Lieblingssendung oder wichtige Sportereignisse verpassen.</description>
 	        <disclaimer lang="en">Use at your own risk.</disclaimer>
 	        <disclaimer lang="de">Benutzung auf eigene Gefahr</disclaimer>
 	        <platform>all</platform>
@@ -142,22 +126,39 @@
 	    </extension>
 	</addon>
 
-	<addon id="service.lgtv.remote" name="LG Smart TV 3D Switch" version="0.1.12" provider-name="Birger Jesch">
+	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="1.4.4"
+	       provider-name="Birger Jesch, thanks to F. Epperlein">
+	  <requires>
+	    <import addon="script.module.requests" version="2.3.0" />
+	    <import addon="script.module.pil" version="1.1.7" />
+	  </requires>
 	  <extension point="xbmc.service" library="default.py" start="login" />
-	  <extension point="xbmc.python.script" library="scan.py" />
 	  <extension point="xbmc.addon.metadata">
 	    <platform>all</platform>
-	    <summary lang="en">LG Smart TV 3D Switch - for both 2011 and 2012 series</summary>
-	    <description lang="en">This addon turns your LG Smart TV into 3D mode automatically over the network if a tagged '3D' content is playing. For this, the TV device must be integrated in your home network properly. This addon supports the old 2011 series and the newer 2012 series too.</description>
-	    <summary lang="de">LG Smart TV 3D Switch - für die 2011er und 2012er Serie</summary>
-	    <description lang="de">Dieses Addon schaltet Dein LG Smart TV-Gerät über das Netzwerk in den 3D-Modus, sobald ein als '3D' markierter Inhalt abgespielt wird. Der LG Smart TV muss dazu korrekt in das Heimnetzwerk eingebunden sein. Es werden sowohl die Modelle bis 2011 als auch die nachfolgenden 2012er unterstützt.</description>
-	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine unbekannten Code-Sequenzen verwenden!</disclaimer>
-	    <disclaimer lang="en">Use at your own risk. Don't use unknown code sequences!</disclaimer>
+	    <summary lang="en">Fritzbox Callmonitor</summary>
+	    <description lang="en">This addon displays incoming and outgoing calls from a Fritzbox connecting on port 1012. To enable the listen port in your Fritzbox enter the following code into your telephone.
+	#96*5* Callmonitor-Support enabled.
+	#96*4* Callmonitor-Support disabled.</description>
+	
+	    <summary lang="de">Fritzbox Anrufmonitor</summary>
+	    <description lang="de">Dieses Addon zeigt eingehende/ausgehende Anrufe auf der Fritzbox an. Dazu muss der Port 1012 auf der Fritzbox freigeschaltet sein. Geben Sie dazu auf dem Telefon folgenden Telefoncode ein.
+	#96*5* Anrufmonitor-Support aktivieren.
+	#96*4* Anrufmonitor-Support deaktivieren.</description>
+	
+	    <summary lang="nl">Fritzbox Oproepmonitor</summary>
+	    <description lang="nl">Deze Addon toont de binnenkomende/uitgaande oproepen van een Fritzbox op port 1012. Om de port aan te zetten, toets de volgende code in op je telefoon.
+	#96*5* Oproepmonitor-Support activeren.
+	#96*4* Oproepmonitor-Support deactivieren.</description>
+	
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr</disclaimer>
+	    <disclaimer lang="en">Use at your own risk</disclaimer>
+	    <disclaimer lang="nl">Gebruik op eigen risico</disclaimer>
+	
 	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum></forum>
+	    <forum>http://www.vdr-portal.de/board60-linux/board62-software/board95-xbmc/121034-announce-fritz-box-anrufmonitor-f%C3%BCr-xbmc/</forum>
 	    <website>http://vdr4bj1.no-ip.org</website>
 	    <email>birger.jesch@gmail.com</email>
-	    <source>https://github.com/b-jesch/service.lgtv.remote</source>
+	    <source></source>
 	  </extension>
 	</addon>
 </addons>
