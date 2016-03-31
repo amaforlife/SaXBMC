@@ -32,7 +32,8 @@ import shutil
 from xml.dom import minidom
 
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor',
-             'service.sleepy.watchdog', 'service.tvh.manager', 'service.lgtv.remote', 'service.kn.switchtimer']
+             'service.sleepy.watchdog', 'service.tvh.manager', 'service.lgtv.remote', 'service.kn.switchtimer',
+             'plugin.program.tvhighlights']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
 BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
