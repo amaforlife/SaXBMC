@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.3.7
+- digest authentication of tvheadend implemented
+
 0.3.6
 - Bugfix: Fix exception if pvr.hts isn't installed or inactive
 
