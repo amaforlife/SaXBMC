@@ -1,48 +1,43 @@
-CHANGELOG
-
-0.1.15
-- Activation of watchdog to a given time frame implemented
-
-0.1.14
+[B]0.1.14[/B]
 - Bugfix
 - Language XML Files changed to Transifex .po
 
-0.1.13
+[B]0.1.13[/B]
 - Minor Bugfixes
 
-0.1.12
+[B]0.1.12[/B]
 - Option for exiting Kodi added
 
-0.1.11
+[B]0.1.11[/B]
 - Code adjustments
 
-0.1.10
+[B]0.1.10[/B]
 - Option for keeping Watchdog alive when stop playing video/audio is selected
 
-0.1.9
+[B]0.1.9[/B]
 - Option added. Jumps into main menu optionally when stop playing video/audio is selected.
 
-0.1.8
+[B]0.1.8[/B]
 - Unused code removed. Also addon-id.ctl is no longer needed (see V.0.1.6) because
   Sleepy Watchdog can now handle addons himself.
 
-0.1.7
+[B]0.1.7[/B]
 - New action added. Watchdog can now start other addons too.
 
-0.1.6
+[B]0.1.6[/B]
 - Mechanism for interoperability between addons implemented. TVH Powermanagement
   now creates an addon-id.ctl file that signals an active state of the addon.
   Watchdog kicks off without any action in this case.
 
-0.1.4
+[B]0.1.4[/B]
 - Use DialogProgress instead of DialogProgressBG as this wasn't shown in fullscreen mode
 
-0.1.3
+[B]0.1.3[/B]
 - CEC command added (turns TV off)
 
-0.1.2
+[B]0.1.2[/B]
 - German language file added, some code enhancements
 
-0.1.1
+[B]0.1.1[/B]
 - Initial version
 
