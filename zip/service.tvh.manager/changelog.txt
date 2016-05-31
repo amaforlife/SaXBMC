@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.3.8
+- README.pdf updated
+
 0.3.7
 - digest authentication of tvheadend implemented
 
