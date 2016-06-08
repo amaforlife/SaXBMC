@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.3.10
+- improved handling if TVH HTSP Client is'nt present
+
 0.3.9
 - add option to set/unset root privileges for the shutdown wrapper
 
