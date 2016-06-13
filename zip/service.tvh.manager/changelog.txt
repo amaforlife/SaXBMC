@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.3.11
+- Command option in network detection removed
+
 0.3.10
 - improved handling if TVH HTSP Client is'nt present
 
