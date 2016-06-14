@@ -71,7 +71,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="1.2.2">
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="1.2.3">
 	    <requires>
 	        <import addon="xbmc.addon" version="14.0.0"/>
 	        <import addon="xbmc.python" version="2.20.0"/>
