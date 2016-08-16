@@ -158,7 +158,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="plugin.service.gto" name="German Telecast Offers" version="1.0.7" provider-name="Birger Jesch">
+	<addon id="plugin.service.gto" name="German Telecast Offers" version="1.0.8" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.1.0"/>
 	    </requires>
@@ -179,9 +179,9 @@
 	        </description>
 	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	        <source>https://github.com/b-jesch/plugin.service.gto</source>
-	        <forum>-</forum>
-	        <email>-</email>
-	        <website>-</website>
+	        <forum>http://www.kodinerds.net/index.php/Thread/50943-Release-TV-Widget-German-Telecast-Offers/</forum>
+	        <email>birger.jesch@gmail.com</email>
+	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
 	    </extension>
 	</addon>
 
