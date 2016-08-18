@@ -1,3 +1,6 @@
+1.0.10
+- Parameter passing adjusted when the addon is called as a plugin
+
 1.0.9
 - move ChannelTranslations.json to userdata folder to avoid overwriting changes of this file
   after update
