@@ -113,7 +113,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="plugin.program.fritzact" name="Fritz Smart Home" version="0.0.3" provider-name="Birger Jesch">
+	<addon id="plugin.program.fritzact" name="Fritz Smart Home" version="0.0.4" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.20.0" />
 	        <import addon="script.module.requests" version="2.9.1" />
@@ -136,10 +136,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="service.sleepy.watchdog"
-	       name="Sleepy Watchdog"
-	       version="0.1.15"
-	       provider-name="Birger Jesch, thanks to Martin Schlosser">
+	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.18" provider-name="Birger Jesch, thanks to Martin Schlosser">
 	  <extension point="xbmc.service"
 	             library="default.py" start="[login|startup]" />
 	  <extension point="xbmc.addon.metadata">
