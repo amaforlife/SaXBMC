@@ -46,8 +46,7 @@
 		</extension>
 	</addon>
 
-	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.2"
-	       provider-name="Birger Jesch, Lutz Leonhardt">
+	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.3" provider-name="Birger Jesch, Lutz Leonhardt">
 	  <requires>
 	    <import addon="xbmc.python" version="2.24.0" />
 	    <import addon="xbmc.json" version="6.32.4" />
@@ -168,7 +167,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="plugin.program.tvhighlights" name="TV Highlights Grabber - TV Digital" version="0.1.11" provider-name="TDOe">
+	<addon id="plugin.program.tvhighlights" name="TV Highlights Grabber - TV Digital" version="0.1.13" provider-name="TDOe">
 	    <requires>
 	        <import addon="xbmc.python" version="2.1.0"/>
 	    </requires>
@@ -196,7 +195,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="plugin.service.gto" name="German Telecast Offers" version="2.0.6" provider-name="Birger Jesch">
+	<addon id="plugin.service.gto" name="German Telecast Offers" version="2.0.7" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.20.0"/>
 	    </requires>
@@ -227,7 +226,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.18" provider-name="Birger Jesch">
+	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.19" provider-name="Birger Jesch">
 	  <extension point="xbmc.service" library="default.py" start="[login|startup]" />
 	  <extension point="xbmc.python.script" library="default.py" />
 	  <extension point="xbmc.addon.metadata">
