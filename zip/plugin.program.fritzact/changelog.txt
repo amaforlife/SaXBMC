@@ -1,5 +1,8 @@
 Changelog:
 
+- 0.0.6
+- Show the toggled states of actors in the actors list when an actor will be switched
+
 - 0.0.5
   Actors list added, will be shown if a preferred AIN isn't set and more than one actor is present
 
