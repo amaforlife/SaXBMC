@@ -83,8 +83,7 @@ class Generator:
                     for addon_root, dirs, files in os.walk(addon):
                         dirs[:] = [d for d in dirs if d not in EXCLUDES]
                         for filename in files:
-                            if os.path.basename(filename)[0:1] == '.' or os.path.basename(filename)[-2:] == 'md' \
-                                    or os.path.basename(filename)[-3:] == 'pyo' \
+                            if os.path.basename(filename)[0:1] == '.' or os.path.basename(filename)[-2:] == 'pyo' \
                                     or os.path.basename(filename)[-3:] == 'pyc':
                                 continue
                             if os.path.basename(filename) == 'changelog.txt':
