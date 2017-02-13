@@ -84,7 +84,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.1">
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.2">
 	    <requires>
 	        <import addon="xbmc.python" version="2.24.0"/>
 	        <import addon="xbmc.json" version="6.20.0"/>
@@ -121,7 +121,7 @@
 
 	<addon id="plugin.program.fritzact" name="Fritz Smart Home" version="0.0.15" provider-name="Birger Jesch">
 	    <requires>
-	        <import addon="xbmc.python" version="2.20.0" />
+	        <import addon="xbmc.python" version="2.24.0" />
 	        <import addon="script.module.requests" version="2.9.1" />
 	    </requires>
 		<extension point="xbmc.python.script" library="default.py">
@@ -140,6 +140,8 @@
 	        <email>birger.jesch@gmail.com</email>
 	        <website></website>
 	        <assets>
+	            <icon>icon.png</icon>
+	            <fanart>fanart.jpg</fanart>
 	            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
 	            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
 	            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
@@ -248,12 +250,12 @@
 	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.20" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.20.0" />
+	    <import addon="xbmc.addon" version="15.0.0" />
 	  </requires>
 	  <extension point="xbmc.service" library="default.py" start="[login|startup]" />
 	  <extension point="xbmc.python.script" library="default.py" />
 	  <extension point="xbmc.addon.metadata">
 	    <platform>linux</platform>
-	    <language></language>
 	    <summary lang="en">TVHeadend Power Management</summary>
 	    <summary lang="de">Power-Management für TVHeadend</summary>
 	    <summary lang="pl">TVHeadend Power Management</summary>
@@ -268,13 +270,6 @@
 	    <website>http://vdr4bj1.no-ip.org</website>
 	    <email>birger.jesch@gmail.com</email>
 	    <source>https://github.com/b-jesch/service.tvh.manager</source>
-	    <assets>
-	      <icon>icon.png</icon>
-	      <fanart>fanart.jpg</fanart>
-	      <screenshot>resources/screenshot-01.jpg</screenshot>
-	      <screenshot>resources/screenshot-02.jpg</screenshot>
-	      <screenshot>resources/screenshot-03.jpg</screenshot>
-	    </assets>
 	  </extension>
 	</addon>
 
