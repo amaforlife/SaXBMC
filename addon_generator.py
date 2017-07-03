@@ -34,9 +34,9 @@ from xml.dom import minidom
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor',
              'service.sleepy.watchdog', 'service.tvh.manager', 'service.lgtv.remote', 'service.kn.switchtimer',
              'plugin.program.tvhighlights', 'plugin.service.gto', 'plugin.program.fritzact', 'plugin.video.ipcams',
-             'service.calendar']
+             'service.calendar', 'metadata.themoviedbconcert.org']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
-BASEDIR = '../../addons'
+BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
 ZIPDIR = 'zip'
 ZIPEXT = '.zip'
