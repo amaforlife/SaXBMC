@@ -122,7 +122,7 @@
 
 	<addon id="metadata.musicvideos.themoviedb.org"
 	       name="The Movie Database Concert"
-	       version="3.9.3"
+	       version="3.9.4"
 	       provider-name="Team Kodi mod mb RudizonE">
 	  <requires>
 	    <import addon="xbmc.metadata" version="2.1.0"/>
@@ -458,7 +458,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.25" provider-name="Birger Jesch">
+	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.26" provider-name="Birger Jesch">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 		</requires>
