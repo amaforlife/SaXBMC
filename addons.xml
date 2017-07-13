@@ -84,6 +84,26 @@
 	  </extension>
 	</addon>
 
+	<addon id="script.helper.bumblebox" name="Bumblebox" version="0.1.6" provider-name="Birger Jesch">
+		<requires>
+			<import addon="xbmc.python" version="2.25.0"/>
+		</requires>
+		<extension point="xbmc.python.script" library="script.py">
+	        <provides>audio</provides>
+		</extension>
+		<extension point="xbmc.python.pluginsource" library="script.py">
+			<provides>audio</provides>
+		</extension>
+	
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en_gb">Helpful tools for skin extensions</summary>
+			<summary lang="de_de">Nützliche Tools für Skin-Erweiterungen</summary>
+			<description lang="en_gb">The Bumblebox contains helpful tools for querying databases to provide additional information in skins.</description>
+			<description lang="de_de">Die Bumblebox enthält nützliche Werkzeuge für Datenbank-Abfragen, um zusätzliche Informationen in Skins bereitzustellen.</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
 	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.3">
 	    <requires>
 	        <import addon="xbmc.python" version="2.24.0"/>
@@ -322,7 +342,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.calendar" name="KN Calendar Reminder" version="0.0.6" provider-name="Birger Jesch">
+	<addon id="service.calendar" name="KN Calendar Reminder" version="0.0.7" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0"/>
 	    <import addon="script.module.oauth2client" version="1.4.7"/>
