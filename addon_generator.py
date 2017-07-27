@@ -29,6 +29,7 @@ import os
 import sys
 import zipfile
 import shutil
+import hashlib
 from xml.dom import minidom
 
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor',
@@ -141,12 +142,7 @@ class Generator:
     def _generate_md5_file(self):
         # create a new md5 hash
         os.chdir(WORKINGDIR)
-        try:
-            import md5
-            m = md5.new(open("addons.xml", "r").read()).hexdigest()
-        except ImportError:
-            import hashlib
-            m = hashlib.md5(open("addons.xml", "r").read().encode("UTF-8")).hexdigest()
+        m = hashlib.md5(open("addons.xml", "r").read().encode("UTF-8")).hexdigest()
 
         # save file
         try:
