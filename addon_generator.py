@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
 # *
 # *  Copyright (C) 2012-2013 Garrett Brown
 # *  Copyright (C) 2010      j48antialias
@@ -37,7 +37,7 @@ MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callm
              'plugin.program.tvhighlights', 'plugin.service.gto', 'plugin.program.fritzact', 'plugin.video.ipcams',
              'service.calendar', 'metadata.themoviedbconcert.org', 'script.helper.bumblebox']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
-BASEDIR = '../addons'
+BASEDIR = '../../addons'
 WORKINGDIR = os.getcwd()
 ZIPDIR = 'zip'
 ZIPEXT = '.zip'
