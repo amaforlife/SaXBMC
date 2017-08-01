@@ -142,7 +142,10 @@ class Generator:
     def _generate_md5_file(self):
         # create a new md5 hash
         os.chdir(WORKINGDIR)
-        m = hashlib.md5(open("addons.xml", "r").read().encode("UTF-8")).hexdigest()
+        try:
+            m = hashlib.md5(open("addons.xml", "r").read().encode("UTF-8")).hexdigest()
+        except UnicodeDecodeError:
+            m = hashlib.md5(open("addons.xml", "r").read()).hexdigest()
 
         # save file
         try:
