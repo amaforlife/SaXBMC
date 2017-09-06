@@ -1,77 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="script.service.caretaker" name="KN Addon Caretaker" version="0.0.4" provider-name="Birger Jesch">
+	<addon id="plugin.service.gto" name="German Telecast Offers" version="2.0.23" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
+	        <import addon="script.module.dateutil" version="2.5.3"/>
 	    </requires>
-	    <extension point="xbmc.service" library="service.py" start="login"/>
-	    <extension point="xbmc.python.script" library="addon.py"/>
+	    <extension point="xbmc.python.script" library="default.py" />
+	    <extension point="xbmc.service" library="starter.py" start="startup">
+	    </extension>
+	
 	    <extension point="xbmc.addon.metadata">
-	        <summary lang="en_gb">Take care with unauthorized Repositories</summary>
-	        <description lang="en_gb">This service checks your addon folder for unauthorized, potentially harmful repositories.</description>
-	        <disclaimer lang="en_gb">Use at your own risk.</disclaimer>
-	        <summary lang="de_de">Vorsicht vor nicht autorisierten Repositories</summary>
-	        <description lang="de_de">Dieser Dienst überprüft den Addon-Ordner auf nicht autorisierte, möglicherweise schädliche Repositories.</description>
-	        <disclaimer lang="de_de">Benutzung auf eigene Gefahr.</disclaimer>
 	        <platform>all</platform>
+	        <summary lang="en_GB">Fetch todays TV Offers from different scrapers</summary>
+	        <summary lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten</summary>
+	        <language>de</language>
+	        <description lang="en_GB">Fetch todays TV Offers from different scrapers
+	
+	This plugin needs a integration into the skin!
+	Please refer to the README.txt into the folder named 'integration'.
+	        </description>
+	        <description lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten.
+	
+	Dieses Plugin benoetigt eine Skin-Integration!
+	Hierfür bitte README.txt im Ordner 'integration' beachten.
+	        </description>
 	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-	        <forum></forum>
-	        <website></website>
-	        <email></email>
-	        <source>https://github.com/b-jesch/script.service.caretaker</source>
-	        <news></news>
+	        <source>https://github.com/b-jesch/plugin.service.gto</source>
+	        <forum>http://www.kodinerds.net/index.php/Thread/50943-Release-TV-Widget-German-Telecast-Offers/</forum>
+	        <email>birger.jesch@gmail.com</email>
+	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
+	        <news>
+	            Recording capabilities added, some new tv/sports scrapers added
+	        </news>
 	        <assets>
-	            <icon>resources/icon.png</icon>
-	            <fanart></fanart>
-	            <screenshot></screenshot>
+	            <icon>icon.png</icon>
+	            <fanart>fanart.jpg</fanart>
+	            <screenshot>resources/lib/media/screenshots/screenshot_0.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_1.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_2.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_3.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_4.jpg</screenshot>
 	        </assets>
 	    </extension>
 	</addon>
 
-	<addon id="service.lgtv.remote" name="LG Smart TV 3D Switch" version="0.1.20" provider-name="Birger Jesch">
-	  <requires>
-	    <import addon="xbmc.python" version="2.20.0"/>
-	  </requires>
-	  <extension point="xbmc.service" library="default.py" start="login" />
-	  <extension point="xbmc.python.script" library="scan.py" />
-	  <extension point="xbmc.addon.metadata">
-	    <platform>all</platform>
-	    <summary lang="en">LG Smart TV 3D Switch - for both 2011 and 2012 series</summary>
-	    <description lang="en">This addon turns your LG Smart TV into 3D mode automatically over the network if tagged '3D' content is playing. For this, the LG TV device must be integrated in your home network properly. This addon supports LG TVs of the old 2011 series and the newer 2012 models too.</description>
-	    <summary lang="de">LG Smart TV 3D Switch - für die 2011er und 2012er Serie</summary>
-	    <description lang="de">Dieses Addon schaltet Dein LG Smart TV-Gerät über das Netzwerk in den 3D-Modus, sobald ein als '3D' markierter Inhalt abgespielt wird. Der LG Smart TV muss dazu korrekt in das Heimnetzwerk eingebunden sein. Es werden sowohl die Modelle bis 2011 als auch die nachfolgenden 2012er unterstützt.</description>
-	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine unbekannten Code-Sequenzen verwenden!</disclaimer>
-	    <disclaimer lang="en">Use at your own risk. Don't use unknown code sequences!</disclaimer>
-	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum></forum>
-	    <website>http://vdr4bj1.no-ip.org</website>
-	    <email>birger.jesch@gmail.com</email>
-	    <source>https://github.com/b-jesch/service.lgtv.remote</source>
-	    <news>
-	      0.1.20
-	      - smaller changes, bump version due repo change
-	    </news>
-	    <assets>
-	      <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-	      <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-	    </assets>
-	  </extension>
-	</addon>
-
-	<addon id="repository.saxbmc" name="SaXBMC Addon Repo" version="1.0.1" provider-name="Birger Jesch">
-		<extension point="xbmc.addon.repository" name="SaXBMC Addon Repo">
-			<info compressed="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/zip/</datadir>
+	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.26" provider-name="Birger Jesch">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+		</requires>
+		<extension point="xbmc.python.script" library="default.py">
+			<provides>executable</provides>
 		</extension>
 		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Some useful services and scripts for use within Kodi</summary>
-			<description lang="en">Get some useful services and scripts that makes life with kodi easier.</description>
-			<summary lang="de">Nützliche Dienste und Programme für Kodi</summary>
-			<description lang="de">Installiere nützliche Dienste oder Programme, die Dir das Leben mit Kodi einfacher machen.</description>
-			<disclaimer></disclaimer>
+			<summary lang="en">Rip DVDs and BluRays within Kodi</summary>
+	        <summary lang="de">Rippt DVDs und BluRays in Kodi</summary>
+			<description lang="en">Lounge Ripper uses MakeMKV and Handbrake to rip and encode movies directly into Kodi with a simple press of a button.</description>
+	        <description lang="de">Mit Lounge Ripper einfach per Knopfdruck Filme direkt in Kodi mit Hilfe von MakeMKV und Handbrake rippen und umkodieren.</description>
+			<disclaimer lang="en">Since Lounge Ripper makes use of MakeMKV and Handbrake, those must be installed properly for it to work.</disclaimer>
+			<disclaimer lang="de">Lounge Ripper verwendet MakeMKV und Handbrake, diese müssen korrekt installiert sein.</disclaimer>
 			<platform>all</platform>
+			<license></license>
+			<forum></forum>
+			<website></website>
+			<email>birger.jesch@gmail.com</email>
+			<source>https://github.com/b-jesch/script.loungeripper.git</source>
 		</extension>
 	</addon>
 
@@ -113,59 +106,34 @@
 	  </extension>
 	</addon>
 
-	<addon id="script.helper.bumblebox" name="Bumblebox" version="0.1.6" provider-name="Birger Jesch">
-		<requires>
-			<import addon="xbmc.python" version="2.25.0"/>
-		</requires>
-		<extension point="xbmc.python.script" library="script.py">
-	        <provides>audio</provides>
-		</extension>
-		<extension point="xbmc.python.pluginsource" library="script.py">
-			<provides>audio</provides>
-		</extension>
-	
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en_gb">Helpful tools for skin extensions</summary>
-			<summary lang="de_de">Nützliche Tools für Skin-Erweiterungen</summary>
-			<description lang="en_gb">The Bumblebox contains helpful tools for querying databases to provide additional information in skins.</description>
-			<description lang="de_de">Die Bumblebox enthält nützliche Werkzeuge für Datenbank-Abfragen, um zusätzliche Informationen in Skins bereitzustellen.</description>
-			<platform>all</platform>
-		</extension>
-	</addon>
-
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.5">
-	    <requires>
-	        <import addon="xbmc.python" version="2.24.0"/>
-	        <import addon="script.module.dateutil" version="2.5.3"/>
-	        <import addon="xbmc.json" version="6.20.0"/>
-	    </requires>
-	    <extension point="xbmc.service" library="service.py" start="login" />
-	    <extension point="xbmc.python.script" library="handler.py" />
-	    <extension point="kodi.context.item" library="addtimer.py">
-	            <menu id="kodi.core.main">
-	                <item library="addtimer.py">
-	                    <label>30040</label>
-	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
-	                </item>
-	                <item library="deltimer.py">
-	                    <label>30041</label>
-	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
-	                </item>
-	            </menu>
-	    </extension>
-	    <extension point="xbmc.addon.metadata">
-	        <summary lang="en_GB">A switch timer for the PVR module of Kodi</summary>
-	        <summary lang="de_DE">Ein Umschalttimer für das PVR-Modul von Kodi</summary>
-	        <description lang="en_GB">Switching with the KN switchtimer from every point of view inside Kodi to a tv or radio broadcast at a given time - no more miss your favorite shows or sports events on tv.</description>
-	        <description lang="de_DE">Mit dem KN Switchtimer schaltest Du auf Deine programmierte Sendung zur richtigen Zeit um - egal wo Du Dich gerade befindest. Nie wieder die Lieblingssendung oder wichtige Sportereignisse verpassen.</description>
-	        <disclaimer lang="en_GB">Use at your own risk.</disclaimer>
-	        <disclaimer lang="de_DE">Benutzung auf eigene Gefahr</disclaimer>
-	        <platform>all</platform>
-	        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	        <website>http://vdr4bj1.no-ip.org</website>
-	        <source>https://github.com/b-jesch/service.kn.switchtimer</source>
-	        <email>birger.jesch@gmail.com</email>
-	    </extension>
+	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.22" provider-name="Birger Jesch">
+	  <requires>
+	    <import addon="xbmc.python" version="2.20.0" />
+	    <import addon="script.module.requests" version="2.9.1" />
+	  </requires>
+	  <extension point="xbmc.service" library="default.py" start="[login|startup]" />
+	  <extension point="xbmc.python.script" library="default.py" />
+	  <extension point="xbmc.addon.metadata">
+	    <platform>linux</platform>
+	    <summary lang="en">TVHeadend Power Management</summary>
+	    <summary lang="de">Power-Management für TVHeadend</summary>
+	    <summary lang="pl">TVHeadend Power Management</summary>
+	    <description lang="en">Poweroff management for current active recordings and wakeup procedures for future schedules using the XML-Interface of TVHeadend. This plugin delivers optional Emails via SMTP if an automatic scheduled Recording ended successfully. The plugin starts the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
+	    <description lang="de">PowerOff-Management für aktuell laufende Aufnahmen und Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung des XML-Interfaces von TVHeadend. Das Plugin versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
+	    <description lang="pl">Program zarządzający włączeniem i wyłączeniem systemu dla bieżących aktywnych nagrań ustawionych w harmonogramie interfejsu XML programu : TVHeadend. Wtyczka oferuje opcjonalnie wysłanie wiadomości e-mail za pośrednictwem protokołu SMTP, jeśli automatyczne nagrywanie zakończyło się powodzeniem. Wtyczka może także uruchamiać system okresowo w czasie zdefiniowanym przez użytkownika dla uaktualnienia EPG, jeśli jest dłuższy czas braku aktywności systemu.</description>
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine Haftung für nicht gesetzte Timer, nicht durchgeführte Aufnahmen und andere Seiteneffekte!</disclaimer>
+	    <disclaimer lang="en">Use at your own risk. No liability for not set timers, lack of recording and other side effects!</disclaimer>
+	    <disclaimer lang="pl">Używasz na własne ryzyko. Nie ponosimy odpowiedzialności za nieprawidłowe nastawienia czasu nagrania, braku nagrania i innych skutków ubocznych!</disclaimer>
+	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	    <forum>http://forum.xbmc.org/showthread.php?tid=115758</forum>
+	    <website>http://vdr4bj1.no-ip.org</website>
+	    <email>birger.jesch@gmail.com</email>
+	    <source>https://github.com/b-jesch/service.tvh.manager</source>
+	    <assets>
+	      <icon>icon.png</icon>
+	      <fanart>fanart.jpg</fanart>
+	    </assets>
+	  </extension>
 	</addon>
 
 	<addon id="metadata.musicvideos.themoviedb.org"
@@ -292,7 +260,27 @@
 	  </extension>
 	</addon>
 
-	<addon id="plugin.program.fritzact" name="Fritz Smart Home" version="0.0.15" provider-name="Birger Jesch">
+	<addon id="script.helper.bumblebox" name="Bumblebox" version="0.1.6" provider-name="Birger Jesch">
+		<requires>
+			<import addon="xbmc.python" version="2.25.0"/>
+		</requires>
+		<extension point="xbmc.python.script" library="script.py">
+	        <provides>audio</provides>
+		</extension>
+		<extension point="xbmc.python.pluginsource" library="script.py">
+			<provides>audio</provides>
+		</extension>
+	
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en_gb">Helpful tools for skin extensions</summary>
+			<summary lang="de_de">Nützliche Tools für Skin-Erweiterungen</summary>
+			<description lang="en_gb">The Bumblebox contains helpful tools for querying databases to provide additional information in skins.</description>
+			<description lang="de_de">Die Bumblebox enthält nützliche Werkzeuge für Datenbank-Abfragen, um zusätzliche Informationen in Skins bereitzustellen.</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
+	<addon id="plugin.program.fritzact" name="Fritz Smart Home" version="0.0.16" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.24.0" />
 	        <import addon="script.module.requests" version="2.9.1" />
@@ -322,6 +310,44 @@
 	    </extension>
 	</addon>
 
+	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.19" provider-name="Birger Jesch, thanks to Martin Schlosser">
+	  <extension point="xbmc.service"
+	             library="default.py" start="[login|startup]" />
+	  <extension point="xbmc.addon.metadata">
+	    <platform>all</platform>
+	    <summary lang="en">Sleepy Watchdog - he's watching while You sleep</summary>
+	    <summary lang="de">Sleepy Watchdog - er passt auf, während Du schläfst</summary>
+	    <summary lang="uk">Sleepy Watchdog - він чатує, поки Ви спите</summary>
+	    <description lang="en">This Idle Timer management performs defined actions after an adjusted amount of inactivity time. Those actions are stop playing Audio, Video or TV for example or some actions to execute shutdown variations like suspend, reboot poweroff or hibernate.</description>
+	    <description lang="de">Dieser Timer führt vorher definierte Aktionen nach einer einstellbaren Inaktivitätszeit aus. Die Aktionen können zum Beispiel das Stoppen von Audio, Video oder TV-Streams sein, aber auch das Herunterfahren des Systems in verschiedenen Modi (Suspend, Reboot, PowerOff, Bereitschaft) wird angeboten.</description>
+	    <description lang="uk">Цей Таймер Простою виконує задані дії, після встановленого часу неактивності. Наприклад, зупиняє відтворення Аудіо, Відео, TV-Потоків чи інші дії (як Призупинення, Вимкнення, Перезавантаження або Гібернація) до Системи.</description>
+	    <disclaimer lang="uk">Використовуйте на власний Ризик. Ця Служба, може вступати в конфлікт з іншими сервісами (н.д. Запису).</disclaimer>
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Dieser Dienst könnte mit anderen Diensten (z.B. Aufnahmedienste) kollidieren.</disclaimer>
+	    <disclaimer lang="en">Use at your own risk. This service could conflict to other services (e.g recording services).</disclaimer>
+	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	    <forum>http://www.kodinerds.net/index.php/Thread/43876-RELEASE-Sleepy-WatchDog-Wenn-alles-vor-der-Glotze-schl%C3%A4ft/</forum>
+	    <website>http://vdr4bj1.no-ip.org</website>
+	    <email></email>
+	    <source>https://github.com/b-jesch/service.sleepy.watchdog</source>
+	  </extension>
+	</addon>
+
+	<addon id="repository.saxbmc" name="SaXBMC Addon Repo" version="1.0.1" provider-name="Birger Jesch">
+		<extension point="xbmc.addon.repository" name="SaXBMC Addon Repo">
+			<info compressed="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/b-jesch/SaXBMC/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/b-jesch/SaXBMC/master/zip/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Some useful services and scripts for use within Kodi</summary>
+			<description lang="en">Get some useful services and scripts that makes life with kodi easier.</description>
+			<summary lang="de">Nützliche Dienste und Programme für Kodi</summary>
+			<description lang="de">Installiere nützliche Dienste oder Programme, die Dir das Leben mit Kodi einfacher machen.</description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
 	<addon id="plugin.video.ipcams" name="Surveillance Cameras" version="0.0.3" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0"/>
@@ -345,28 +371,57 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.20" provider-name="Birger Jesch">
-	  <requires>
-	    <import addon="xbmc.python" version="2.24.0"/>
-	  </requires>
-	  <extension point="xbmc.service"
-	             library="default.py" start="[login|startup]" />
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.5">
+	    <requires>
+	        <import addon="xbmc.python" version="2.24.0"/>
+	        <import addon="script.module.dateutil" version="2.5.3"/>
+	        <import addon="xbmc.json" version="6.20.0"/>
+	    </requires>
+	    <extension point="xbmc.service" library="service.py" start="login" />
+	    <extension point="xbmc.python.script" library="handler.py" />
+	    <extension point="kodi.context.item" library="addtimer.py">
+	            <menu id="kodi.core.main">
+	                <item library="addtimer.py">
+	                    <label>30040</label>
+	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
+	                </item>
+	                <item library="deltimer.py">
+	                    <label>30041</label>
+	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
+	                </item>
+	            </menu>
+	    </extension>
+	    <extension point="xbmc.addon.metadata">
+	        <summary lang="en_GB">A switch timer for the PVR module of Kodi</summary>
+	        <summary lang="de_DE">Ein Umschalttimer für das PVR-Modul von Kodi</summary>
+	        <description lang="en_GB">Switching with the KN switchtimer from every point of view inside Kodi to a tv or radio broadcast at a given time - no more miss your favorite shows or sports events on tv.</description>
+	        <description lang="de_DE">Mit dem KN Switchtimer schaltest Du auf Deine programmierte Sendung zur richtigen Zeit um - egal wo Du Dich gerade befindest. Nie wieder die Lieblingssendung oder wichtige Sportereignisse verpassen.</description>
+	        <disclaimer lang="en_GB">Use at your own risk.</disclaimer>
+	        <disclaimer lang="de_DE">Benutzung auf eigene Gefahr</disclaimer>
+	        <platform>all</platform>
+	        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	        <website>http://vdr4bj1.no-ip.org</website>
+	        <source>https://github.com/b-jesch/service.kn.switchtimer</source>
+	        <email>birger.jesch@gmail.com</email>
+	    </extension>
+	</addon>
+
+	<addon id="service.lgtv.remote" name="LG Smart TV 3D Switch" version="0.1.15" provider-name="Birger Jesch">
+	  <extension point="xbmc.service" library="default.py" start="login" />
+	  <extension point="xbmc.python.script" library="scan.py" />
 	  <extension point="xbmc.addon.metadata">
 	    <platform>all</platform>
-	    <summary lang="en_GB">Sleepy Watchdog - he's watching while You sleep</summary>
-	    <summary lang="de_DE">Sleepy Watchdog - er passt auf, während Du schläfst</summary>
-	    <summary lang="uk_UA">Sleepy Watchdog - він чатує, поки Ви спите</summary>
-	    <description lang="en_GB">This Idle Timer management performs defined actions after an adjusted amount of inactivity time. Those actions are stop playing Audio, Video or TV for example or some actions to execute shutdown variations like suspend, reboot poweroff or hibernate.</description>
-	    <description lang="de_DE">Dieser Timer führt vorher definierte Aktionen nach einer einstellbaren Inaktivitätszeit aus. Die Aktionen können zum Beispiel das Stoppen von Audio, Video oder TV-Streams sein, aber auch das Herunterfahren des Systems in verschiedenen Modi (Suspend, Reboot, PowerOff, Bereitschaft) wird angeboten.</description>
-	    <description lang="uk_UA">Цей Таймер Простою виконує задані дії, після встановленого часу неактивності. Наприклад, зупиняє відтворення Аудіо, Відео, TV-Потоків чи інші дії (як Призупинення, Вимкнення, Перезавантаження або Гібернація) до Системи.</description>
-	    <disclaimer lang="uk_UA">Використовуйте на власний Ризик. Ця Служба, може вступати в конфлікт з іншими сервісами (н.д. Запису).</disclaimer>
-	    <disclaimer lang="de_DE">Benutzung auf eigene Gefahr. Dieser Dienst könnte mit anderen Diensten (z.B. Aufnahmedienste) kollidieren.</disclaimer>
-	    <disclaimer lang="en_GB">Use at your own risk. This service could conflict to other services (e.g recording services).</disclaimer>
-	    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-	    <forum>http://www.kodinerds.net/index.php/Thread/43876-RELEASE-Sleepy-WatchDog-Wenn-alles-vor-der-Glotze-schl%C3%A4ft/</forum>
+	    <summary lang="en">LG Smart TV 3D Switch - for both 2011 and 2012 series</summary>
+	    <description lang="en">This addon turns your LG Smart TV into 3D mode automatically over the network if a tagged '3D' content is playing. For this, the TV device must be integrated in your home network properly. This addon supports the old 2011 series and the newer 2012 series too.</description>
+	    <summary lang="de">LG Smart TV 3D Switch - für die 2011er und 2012er Serie</summary>
+	    <description lang="de">Dieses Addon schaltet Dein LG Smart TV-Gerät über das Netzwerk in den 3D-Modus, sobald ein als '3D' markierter Inhalt abgespielt wird. Der LG Smart TV muss dazu korrekt in das Heimnetzwerk eingebunden sein. Es werden sowohl die Modelle bis 2011 als auch die nachfolgenden 2012er unterstützt.</description>
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine unbekannten Code-Sequenzen verwenden!</disclaimer>
+	    <disclaimer lang="en">Use at your own risk. Don't use unknown code sequences!</disclaimer>
+	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	    <forum></forum>
 	    <website>http://vdr4bj1.no-ip.org</website>
-	    <email></email>
-	    <source>https://github.com/b-jesch/service.sleepy.watchdog</source>
+	    <email>birger.jesch@gmail.com</email>
+	    <source>https://github.com/b-jesch/service.lgtv.remote</source>
 	  </extension>
 	</addon>
 
@@ -403,129 +458,32 @@
 	  </extension>
 	</addon>
 
-	<addon id="plugin.program.tvhighlights" name="TV Highlights Grabber - TV Digital" version="0.1.11" provider-name="TDOe">
-	    <requires>
-	        <import addon="xbmc.python" version="2.1.0"/>
-	    </requires>
-	    <extension point="xbmc.python.script" library="default.py" />
-	    <extension point="xbmc.service" library="starter.py" start="startup">
-	    </extension>
-	
-	    <extension point="xbmc.addon.metadata">
-	        <platform>all</platform>
-	        <summary lang="en">Fetch todays TV Highlights from www.tvdigital.de</summary>
-	        <summary lang="de">Holt die TV Highlights des Tages von www.tvdigital.de</summary>
-	        <language>de</language>
-	        <description lang="en">Fetch todays TV Highlights from www.tvdigital.de</description>
-	        <description lang="de">Holt die TV Highlights des Tages von www.tvdigital.de
-	
-	Dieses Plugin benoetigt eine Skin-Integration!
-	Hierfür bitte README.txt im Ordner integration beachten
-	oder online unter https://goo.gl/GtK41L nachlesen.
-	        </description>
-	        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	        <source>https://github.com/tobias-d-oe/plugin.program.tvhighlights</source>
-	        <forum>http://goo.gl/TdGZsF</forum>
-	        <email>-</email>
-	        <website>-</website>
-	    </extension>
-	</addon>
-
-	<addon id="plugin.service.gto" name="German Telecast Offers" version="2.0.23" provider-name="Birger Jesch">
+	<addon id="script.service.caretaker" name="KN Addon Caretaker" version="0.0.4" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
-	        <import addon="script.module.dateutil" version="2.5.3"/>
 	    </requires>
-	    <extension point="xbmc.python.script" library="default.py" />
-	    <extension point="xbmc.service" library="starter.py" start="startup">
-	    </extension>
-	
+	    <extension point="xbmc.service" library="service.py" start="login"/>
+	    <extension point="xbmc.python.script" library="addon.py"/>
 	    <extension point="xbmc.addon.metadata">
+	        <summary lang="en_gb">Take care with unauthorized Repositories</summary>
+	        <description lang="en_gb">This service checks your addon folder for unauthorized, potentially harmful repositories.</description>
+	        <disclaimer lang="en_gb">Use at your own risk.</disclaimer>
+	        <summary lang="de_de">Vorsicht vor nicht autorisierten Repositories</summary>
+	        <description lang="de_de">Dieser Dienst überprüft den Addon-Ordner auf nicht autorisierte, möglicherweise schädliche Repositories.</description>
+	        <disclaimer lang="de_de">Benutzung auf eigene Gefahr.</disclaimer>
 	        <platform>all</platform>
-	        <summary lang="en_GB">Fetch todays TV Offers from different scrapers</summary>
-	        <summary lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten</summary>
-	        <language>de</language>
-	        <description lang="en_GB">Fetch todays TV Offers from different scrapers
-	
-	This plugin needs a integration into the skin!
-	Please refer to the README.txt into the folder named 'integration'.
-	        </description>
-	        <description lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten.
-	
-	Dieses Plugin benoetigt eine Skin-Integration!
-	Hierfür bitte README.txt im Ordner 'integration' beachten.
-	        </description>
 	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-	        <source>https://github.com/b-jesch/plugin.service.gto</source>
-	        <forum>http://www.kodinerds.net/index.php/Thread/50943-Release-TV-Widget-German-Telecast-Offers/</forum>
-	        <email>birger.jesch@gmail.com</email>
-	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
-	        <news>
-	            Recording capabilities added, some new tv/sports scrapers added
-	        </news>
+	        <forum></forum>
+	        <website></website>
+	        <email></email>
+	        <source>https://github.com/b-jesch/script.service.caretaker</source>
+	        <news></news>
 	        <assets>
-	            <icon>icon.png</icon>
-	            <fanart>fanart.jpg</fanart>
-	            <screenshot>resources/lib/media/screenshots/screenshot_0.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_1.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_2.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_3.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_4.jpg</screenshot>
+	            <icon>resources/icon.png</icon>
+	            <fanart></fanart>
+	            <screenshot></screenshot>
 	        </assets>
 	    </extension>
-	</addon>
-
-	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.22" provider-name="Birger Jesch">
-	  <requires>
-	    <import addon="xbmc.python" version="2.20.0" />
-	    <import addon="script.module.requests" version="2.9.1" />
-	  </requires>
-	  <extension point="xbmc.service" library="default.py" start="[login|startup]" />
-	  <extension point="xbmc.python.script" library="default.py" />
-	  <extension point="xbmc.addon.metadata">
-	    <platform>linux</platform>
-	    <summary lang="en">TVHeadend Power Management</summary>
-	    <summary lang="de">Power-Management für TVHeadend</summary>
-	    <summary lang="pl">TVHeadend Power Management</summary>
-	    <description lang="en">Poweroff management for current active recordings and wakeup procedures for future schedules using the XML-Interface of TVHeadend. This plugin delivers optional Emails via SMTP if an automatic scheduled Recording ended successfully. The plugin starts the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
-	    <description lang="de">PowerOff-Management für aktuell laufende Aufnahmen und Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung des XML-Interfaces von TVHeadend. Das Plugin versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
-	    <description lang="pl">Program zarządzający włączeniem i wyłączeniem systemu dla bieżących aktywnych nagrań ustawionych w harmonogramie interfejsu XML programu : TVHeadend. Wtyczka oferuje opcjonalnie wysłanie wiadomości e-mail za pośrednictwem protokołu SMTP, jeśli automatyczne nagrywanie zakończyło się powodzeniem. Wtyczka może także uruchamiać system okresowo w czasie zdefiniowanym przez użytkownika dla uaktualnienia EPG, jeśli jest dłuższy czas braku aktywności systemu.</description>
-	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine Haftung für nicht gesetzte Timer, nicht durchgeführte Aufnahmen und andere Seiteneffekte!</disclaimer>
-	    <disclaimer lang="en">Use at your own risk. No liability for not set timers, lack of recording and other side effects!</disclaimer>
-	    <disclaimer lang="pl">Używasz na własne ryzyko. Nie ponosimy odpowiedzialności za nieprawidłowe nastawienia czasu nagrania, braku nagrania i innych skutków ubocznych!</disclaimer>
-	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum>http://forum.xbmc.org/showthread.php?tid=115758</forum>
-	    <website>http://vdr4bj1.no-ip.org</website>
-	    <email>birger.jesch@gmail.com</email>
-	    <source>https://github.com/b-jesch/service.tvh.manager</source>
-	    <assets>
-	      <icon>icon.png</icon>
-	      <fanart>fanart.jpg</fanart>
-	    </assets>
-	  </extension>
-	</addon>
-
-	<addon id="script.loungeripper" name="Lounge Ripper" version="0.1.26" provider-name="Birger Jesch">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-		</requires>
-		<extension point="xbmc.python.script" library="default.py">
-			<provides>executable</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Rip DVDs and BluRays within Kodi</summary>
-	        <summary lang="de">Rippt DVDs und BluRays in Kodi</summary>
-			<description lang="en">Lounge Ripper uses MakeMKV and Handbrake to rip and encode movies directly into Kodi with a simple press of a button.</description>
-	        <description lang="de">Mit Lounge Ripper einfach per Knopfdruck Filme direkt in Kodi mit Hilfe von MakeMKV und Handbrake rippen und umkodieren.</description>
-			<disclaimer lang="en">Since Lounge Ripper makes use of MakeMKV and Handbrake, those must be installed properly for it to work.</disclaimer>
-			<disclaimer lang="de">Lounge Ripper verwendet MakeMKV und Handbrake, diese müssen korrekt installiert sein.</disclaimer>
-			<platform>all</platform>
-			<license></license>
-			<forum></forum>
-			<website></website>
-			<email>birger.jesch@gmail.com</email>
-			<source>https://github.com/b-jesch/script.loungeripper.git</source>
-		</extension>
 	</addon>
 </addons>
