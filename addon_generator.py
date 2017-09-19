@@ -38,7 +38,7 @@ MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callm
              'service.calendar', 'metadata.themoviedbconcert.org', 'script.helper.bumblebox', 'script.service.caretaker',
              'script.program.driverselect']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
-BASEDIR = '../../addons'
+BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
 ZIPDIR = 'zip'
 ZIPEXT = '.zip'
