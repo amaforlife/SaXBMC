@@ -36,7 +36,7 @@ MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callm
              'service.sleepy.watchdog', 'service.tvh.manager', 'service.lgtv.remote', 'service.kn.switchtimer',
              'plugin.program.tvhighlights', 'plugin.service.gto', 'plugin.program.fritzact', 'plugin.video.ipcams',
              'service.calendar', 'metadata.themoviedbconcert.org', 'script.helper.bumblebox', 'script.service.caretaker',
-             'script.program.driverselect']
+             'script.program.driverselect', 'service.pvr.manager']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
 BASEDIR = '../addons'
 WORKINGDIR = os.getcwd()
