@@ -161,7 +161,7 @@
 		</extension>
 	</addon>
 
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.7">
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.8">
 	    <requires>
 	        <import addon="xbmc.python" version="2.24.0"/>
 	        <import addon="script.module.dateutil" version="2.5.3"/>
@@ -186,8 +186,8 @@
 	        <summary lang="de_DE">Ein Umschalttimer für das PVR-Modul von Kodi</summary>
 	        <description lang="en_GB">Switching with the KN switchtimer from every point of view inside Kodi to a tv or radio broadcast at a given time - no more miss your favorite shows or sports events on tv.</description>
 	        <description lang="de_DE">Mit dem KN Switchtimer schaltest Du auf Deine programmierte Sendung zur richtigen Zeit um - egal wo Du Dich gerade befindest. Nie wieder die Lieblingssendung oder wichtige Sportereignisse verpassen.</description>
-	        <disclaimer lang="en_GB">Use at your own risk.</disclaimer>
-	        <disclaimer lang="de_DE">Benutzung auf eigene Gefahr</disclaimer>
+	        <disclaimer lang="en_GB">Use at your own risk. Post suggestions, improvements or bug reports directly to Git.</disclaimer>
+	        <disclaimer lang="de_DE">Benutzung auf eigene Gefahr. Anregungen, Verbesserungen oder Bugs bitte direkt über Git posten.</disclaimer>
 	        <platform>all</platform>
 	        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	        <website>http://vdr4bj1.no-ip.org</website>
@@ -373,7 +373,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.pvr.manager" name="PVR Recording &amp; Power Manager" version="0.0.3" provider-name="Birger Jesch">
+	<addon id="service.pvr.manager" name="PVR Recording &amp; Power Manager" version="0.0.7" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
@@ -382,11 +382,11 @@
 	  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
 	  <extension point="xbmc.python.script" library="service.py" />
 	  <extension point="xbmc.addon.metadata">
-	    <platform>linux</platform>
+	    <platform>all</platform>
 	    <summary lang="en">PVR Recording &amp; Power Manager</summary>
 	    <summary lang="de">PVR Recording &amp; Power Manager</summary>
 	    <summary lang="pl">PVR Recording &amp; Power Manager</summary>
-	    <description lang="en">Recording and power management for current active recordings and wakeup procedures for future schedules using JSON-RPC. The service delivers optional Emails via SMTP if an automatic scheduled recording ended successfully. Prevents shutdown/poweroff the system while an active schedule is running. Ability to start the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
+	    <description lang="en">Recording and power management for current active recordings and wakeup procedures for future schedules using JSON-RPC. Prevents shutdown/poweroff the system while an active schedule is running. Delivers optional Emails via SMTP if an automatic scheduled recording ended successfully. Ability to start the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
 	    <description lang="de">Power- und Timer-Management für aktuell laufende Aufnahmen sowie Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung von JSON-RPC. Verhindert ein versehentliches Herunterfahren des Systems während einer Aufnahme. Der Dienst versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
 	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine Haftung für nicht gesetzte Timer, nicht durchgeführte Aufnahmen und andere Seiteneffekte!</disclaimer>
 	    <disclaimer lang="en">Use at your own risk. No liability for not set timers, lack of recording and other side effects!</disclaimer>

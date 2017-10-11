@@ -1,3 +1,6 @@
+2.0.23
+- minor fixes
+
 2.0.22
 - some skin modifications
 - sports scraper added
