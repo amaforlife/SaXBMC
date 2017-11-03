@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="script.service.caretaker" name="KN Addon Caretaker" version="0.0.5" provider-name="Birger Jesch">
+	<addon id="script.service.caretaker" name="KN Addon Caretaker" version="0.0.9" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
@@ -9,16 +9,16 @@
 	    <extension point="xbmc.python.script" library="addon.py"/>
 	    <extension point="xbmc.addon.metadata">
 	        <summary lang="en_gb">Take care with unauthorized Repositories</summary>
-	        <description lang="en_gb">This service checks your addon folder for unauthorized, potentially harmful repositories.</description>
-	        <disclaimer lang="en_gb">Use at your own risk.</disclaimer>
+	        <description lang="en_gb">This service checks your addon folder for possibly unauthorized, potentially harmful repositories and informs the user about these. Detailed informations are logged into the caretaker.log at the same folder as your kodi.log. Repository providers: If you think your repository is mistakenly blacklisted, please inform the vendor of this addon.</description>
+	        <disclaimer lang="en_gb">Use at your own risk. The author can not guarantee an error-free working of the addon, nor complete protection against abuse by or from foreign addons can be guaranteed.</disclaimer>
 	        <summary lang="de_de">Vorsicht vor nicht autorisierten Repositories</summary>
-	        <description lang="de_de">Dieser Dienst überprüft den Addon-Ordner auf nicht autorisierte, möglicherweise schädliche Repositories.</description>
-	        <disclaimer lang="de_de">Benutzung auf eigene Gefahr.</disclaimer>
+	        <description lang="de_de">Dieser Dienst überprüft den Addon-Ordner auf möglicherweise nicht autorisierte, potentiell schädliche Repositories und informiert den Nutzer darüber. Detaillierte Informationen werden im caretaker.log protokolliert, welche sich im Log-Verzeichnis von Kodi befindet. Repository Provider: Sollte Euer Repository fälschlicherweise auf der Blacklist erscheinen, informiert bitte den Anbieter dieses Addons.</description>
+	        <disclaimer lang="de_de">Benutzung auf eigene Gefahr. Der Autor kann ein fehlerfreies Arbeiten des Addons nicht garantieren, ebenso kann kein vollständiger Schutz gegen Missbrauch durch oder von fremden Addons gewährleistet werden.</disclaimer>
 	        <platform>all</platform>
 	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-	        <forum></forum>
+	        <forum>https://www.kodinerds.net/index.php/Thread/57888-Release-script-service-caretaker/</forum>
 	        <website></website>
-	        <email></email>
+	        <email>Birger.Jesch@gmail.com</email>
 	        <source>https://github.com/b-jesch/script.service.caretaker</source>
 	        <news></news>
 	        <assets>
@@ -103,12 +103,11 @@
 		</extension>
 	</addon>
 
-	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.11" provider-name="Birger Jesch, Lutz Leonhardt">
+	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.12" provider-name="Birger Jesch, Lutz Leonhardt">
 	  <requires>
 	    <import addon="xbmc.python" version="2.24.0" />
 	    <import addon="xbmc.json" version="6.32.4" />
 	    <import addon="script.module.requests" version="2.3.0" />
-	    <import addon="script.module.pil" version="1.1.7" />
 	    <import addon="script.module.six" version="1.9.0" />
 	  </requires>
 	  <extension point="xbmc.service" library="default.py" start="login" />
@@ -159,6 +158,51 @@
 			<description lang="de_de">Die Bumblebox enthält nützliche Werkzeuge für Datenbank-Abfragen, um zusätzliche Informationen in Skins bereitzustellen.</description>
 			<platform>all</platform>
 		</extension>
+	</addon>
+
+	<addon id="script.service.gto" name="German Telecast Offers" version="2.0.24" provider-name="Birger Jesch">
+	    <requires>
+	        <import addon="xbmc.python" version="2.25.0"/>
+	        <import addon="xbmc.json" version="7.0.0"/>
+	        <import addon="script.module.dateutil" version="2.5.3"/>
+	    </requires>
+	    <extension point="xbmc.python.script" library="default.py" />
+	    <extension point="xbmc.service" library="starter.py" start="startup">
+	    </extension>
+	
+	    <extension point="xbmc.addon.metadata">
+	        <platform>all</platform>
+	        <summary lang="en_GB">Fetch todays TV Offers from different scrapers</summary>
+	        <summary lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten</summary>
+	        <language>de</language>
+	        <description lang="en_GB">Fetch todays TV Offers from different scrapers
+	
+	This plugin needs a integration into the skin!
+	Please refer to the README.txt into the folder named 'integration'.
+	        </description>
+	        <description lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten.
+	
+	Dieses Plugin benoetigt eine Skin-Integration!
+	Hierfür bitte README.txt im Ordner 'integration' beachten.
+	        </description>
+	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	        <source>https://github.com/b-jesch/script.service.gto</source>
+	        <forum>http://www.kodinerds.net/index.php/Thread/50943-Release-TV-Widget-German-Telecast-Offers/</forum>
+	        <email>birger.jesch@gmail.com</email>
+	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
+	        <news>
+	            Recording capabilities added, some new tv/sports scrapers added
+	        </news>
+	        <assets>
+	            <icon>icon.png</icon>
+	            <fanart>fanart.jpg</fanart>
+	            <screenshot>resources/lib/media/screenshots/screenshot_0.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_1.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_2.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_3.jpg</screenshot>
+	            <screenshot>resources/lib/media/screenshots/screenshot_4.jpg</screenshot>
+	        </assets>
+	    </extension>
 	</addon>
 
 	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.8">
@@ -488,49 +532,31 @@
 	    </extension>
 	</addon>
 
-	<addon id="plugin.service.gto" name="German Telecast Offers" version="2.0.23" provider-name="Birger Jesch">
-	    <requires>
-	        <import addon="xbmc.python" version="2.25.0"/>
-	        <import addon="xbmc.json" version="7.0.0"/>
-	        <import addon="script.module.dateutil" version="2.5.3"/>
-	    </requires>
-	    <extension point="xbmc.python.script" library="default.py" />
-	    <extension point="xbmc.service" library="starter.py" start="startup">
-	    </extension>
-	
-	    <extension point="xbmc.addon.metadata">
-	        <platform>all</platform>
-	        <summary lang="en_GB">Fetch todays TV Offers from different scrapers</summary>
-	        <summary lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten</summary>
-	        <language>de</language>
-	        <description lang="en_GB">Fetch todays TV Offers from different scrapers
-	
-	This plugin needs a integration into the skin!
-	Please refer to the README.txt into the folder named 'integration'.
-	        </description>
-	        <description lang="de_DE">Holt die TV Tipps des Tages aus den RSS-Feeds diverser Webseiten.
-	
-	Dieses Plugin benoetigt eine Skin-Integration!
-	Hierfür bitte README.txt im Ordner 'integration' beachten.
-	        </description>
-	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-	        <source>https://github.com/b-jesch/plugin.service.gto</source>
-	        <forum>http://www.kodinerds.net/index.php/Thread/50943-Release-TV-Widget-German-Telecast-Offers/</forum>
-	        <email>birger.jesch@gmail.com</email>
-	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
-	        <news>
-	            Recording capabilities added, some new tv/sports scrapers added
-	        </news>
-	        <assets>
-	            <icon>icon.png</icon>
-	            <fanart>fanart.jpg</fanart>
-	            <screenshot>resources/lib/media/screenshots/screenshot_0.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_1.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_2.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_3.jpg</screenshot>
-	            <screenshot>resources/lib/media/screenshots/screenshot_4.jpg</screenshot>
-	        </assets>
-	    </extension>
+	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.1" provider-name="Birger Jesch">
+	  <requires>
+	    <import addon="xbmc.python" version="2.25.0" />
+	    <import addon="xbmc.json" version="7.0.0" />
+	    <import addon="script.module.requests" version="2.9.1" />
+	  </requires>
+	  <extension point="xbmc.python.script" library="default.py" />
+	  <extension point="xbmc.addon.metadata">
+	    <platform>all</platform>
+	    <summary lang="en">Switch your devices with Sonoff WLAN modules and Kodi</summary>
+	    <summary lang="de">Schalte Deine Geräte mit den Sonoff WLAN Modulen und Kodi</summary>
+	    <description lang="en">Switch with Kodi your illuminations or devices with the Sonoff WLAN modules. Be a couch potato and control up to eight devices via remote.</description>
+	    <description lang="de">Schalte mit Kodi Deine Beleuchtung oder Deine Geräte mit den Sonoff WLAN Modulen. Sei eine Couchkartoffel und steuere bis zu acht Geräte mit der Fernbedienung.</description>
+	    <disclaimer lang="en">Use at your own risk.</disclaimer>
+	    <disclaimer lang="de">Benutzung auf eigene Gefahr.</disclaimer>
+	    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	    <forum></forum>
+	    <website></website>
+	    <email>birger.jesch@gmail.com</email>
+	    <source>https://github.com/b-jesch/script.homematic.sonoff</source>
+	    <assets>
+	      <icon>resources/icon.png</icon>
+	      <fanart>resources/fanart.jpg</fanart>
+	    </assets>
+	  </extension>
 	</addon>
 
 	<addon id="service.tvh.manager" name="TVHeadend Power and Recording Management" version="0.3.22" provider-name="Birger Jesch">
