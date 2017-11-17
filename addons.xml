@@ -59,19 +59,19 @@
 	  </extension>
 	</addon>
 
-	<addon id="script.program.driverselect" name="LibreELEC DVB Drivers" version="0.0.6" provider-name="Birger Jesch">
+	<addon id="script.program.driverselect" name="LibreELEC Module Drivers" version="0.1.4" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
 	    </requires>
 	    <extension point="xbmc.python.script" library="default.py"/>
 	    <extension point="xbmc.addon.metadata">
-	        <summary lang="en_gb">DVB driver selection</summary>
-	        <description lang="en_gb">Select and install a suitable driver module for your DVB hardware.</description>
-	        <disclaimer lang="en_gb">Use at your own risk.</disclaimer>
-	        <summary lang="de_de">DVB Treibermodul Auswahl</summary>
-	        <description lang="de_de">Wähle und installiere ein passendes Treibermodul für Deine DVB-Hardware.</description>
-	        <disclaimer lang="de_de">Benutzung auf eigene Gefahr.</disclaimer>
+	        <summary lang="en_gb">LibreELEC driver selection</summary>
+	        <description lang="en_gb">Select and install a suitable driver module for your hardware.</description>
+	        <disclaimer lang="en_gb">Use at your own risk. No guarantee that this addon works as expected.</disclaimer>
+	        <summary lang="de_de">LibreELEC Treibermodul Auswahl</summary>
+	        <description lang="de_de">Wähle und installiere ein passendes Treibermodul für Deine Hardware.</description>
+	        <disclaimer lang="de_de">Benutzung auf eigene Gefahr. Keine Garantie, daß das Addon wie erwartet funktioniert.</disclaimer>
 	        <platform>linux</platform>
 	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	        <forum></forum>
@@ -364,36 +364,6 @@
 	  </extension>
 	</addon>
 
-	<addon id="plugin.program.fritzact" name="Fritz Smart Home" version="0.0.16" provider-name="Birger Jesch">
-	    <requires>
-	        <import addon="xbmc.python" version="2.24.0" />
-	        <import addon="script.module.requests" version="2.9.1" />
-	    </requires>
-		<extension point="xbmc.python.script" library="default.py">
-			<provides>executable</provides>
-	    </extension>
-	
-	    <extension point="xbmc.addon.metadata">
-	        <platform>all</platform>
-	        <summary lang="en">Switching your home with Kodi</summary>
-	        <summary lang="de">Schalte Dein Zuhause mit Kodi</summary>
-	        <description lang="en">Use your Fritz!DECT switches within Kodi. Control light and switch your devices with FritzDECT actors. Find out about powered-on devices and their power consumption. Make yourself comfortable with a touch of your remote.</description>
-	        <description lang="de">Schalte Deine Fritz!DECT Steckdosen mit Kodi. Steuere Licht und Deine Geräte über FritzDECT Schalter. Informiere Dich über eingeschaltete Geräte und deren Stromverbrauch. Mach' es Dir bequem - mit nur einem Klick auf der Fernbedienung.</description>
-	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-	        <source>https://github.com/b-jesch/plugin.program.fritzact</source>
-	        <forum>http://www.kodinerds.net/index.php/Thread/52691-RELEASE-Fritz-Smart-Home/</forum>
-	        <email>birger.jesch@gmail.com</email>
-	        <website></website>
-	        <assets>
-	            <icon>icon.png</icon>
-	            <fanart>fanart.jpg</fanart>
-	            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-	            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-	            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-	        </assets>
-	    </extension>
-	</addon>
-
 	<addon id="plugin.video.ipcams" name="Surveillance Cameras" version="0.0.3" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0"/>
@@ -417,11 +387,12 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.pvr.manager" name="PVR Recording &amp; Power Manager" version="0.0.7" provider-name="Birger Jesch">
+	<addon id="service.pvr.manager" name="PVR Recording &amp; Power Manager" version="0.0.8" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
 	    <import addon="script.module.requests" version="2.9.1" />
+	    <import addon="script.module.dateutil" version="2.5.3"/>
 	  </requires>
 	  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
 	  <extension point="xbmc.python.script" library="service.py" />
