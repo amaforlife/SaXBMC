@@ -247,9 +247,7 @@
 	    <import addon="metadata.common.themoviedb.org" version="2.13.1"/>
 	    <import addon="plugin.video.youtube" version="4.4.10" optional="true"/>
 	  </requires>
-	  <extension point="xbmc.metadata.scraper.musicvideos"
-	             language="en"
-	             library="tmdb.xml"/>
+	  <extension point="xbmc.metadata.scraper.musicvideos" language="en" library="tmdb.xml"/>
 	  <extension point="xbmc.addon.metadata">
 	    <summary lang="af">TMDB Fliek Skraper</summary>
 	    <summary lang="be">TMDB Concert Scraper</summary>
@@ -501,7 +499,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.1" provider-name="Birger Jesch">
+	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.2" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
