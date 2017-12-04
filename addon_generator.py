@@ -33,12 +33,12 @@ import hashlib
 from xml.dom import minidom
 
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor',
-             'service.sleepy.watchdog', 'service.tvh.manager', 'service.lgtv.remote', 'service.kn.switchtimer',
-             'plugin.program.tvhighlights', 'plugin.program.fritzact', 'plugin.video.ipcams',
+             'service.sleepy.watchdog', 'service.lgtv.remote', 'service.kn.switchtimer',
+             'plugin.program.fritzact', 'plugin.video.ipcams',
              'service.calendar', 'metadata.themoviedbconcert.org', 'script.helper.bumblebox', 'script.service.caretaker',
              'script.program.driverselect', 'service.pvr.manager', 'script.service.gto', 'script.homematic.sonoff']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
-BASEDIR = '../addons'
+BASEDIR = '../../addons'
 WORKINGDIR = os.getcwd()
 ZIPDIR = 'zip'
 ZIPEXT = '.zip'
