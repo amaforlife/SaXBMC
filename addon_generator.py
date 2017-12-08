@@ -34,7 +34,7 @@ from xml.dom import minidom
 
 MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor',
              'service.sleepy.watchdog', 'service.lgtv.remote', 'service.kn.switchtimer',
-             'plugin.program.fritzact', 'plugin.video.ipcams', 'script.module.oauth2client',
+             'script.program.fritzact', 'plugin.video.ipcams', 'script.module.oauth2client',
              'service.calendar', 'metadata.themoviedbconcert.org', 'script.helper.bumblebox', 'script.service.caretaker',
              'script.program.driverselect', 'service.pvr.manager', 'script.service.gto', 'script.homematic.sonoff']
 EXCLUDES = ['.git', '.idea', '.gitattributes']
