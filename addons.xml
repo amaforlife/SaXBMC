@@ -333,7 +333,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.3" provider-name="Birger Jesch">
+	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.4" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
@@ -357,6 +357,7 @@
 	      <icon>resources/icon.png</icon>
 	      <fanart>resources/fanart.jpg</fanart>
 	    </assets>
+	    <news>- Icons updated[CR]- Sonoff multiswitch implemented</news>
 	  </extension>
 	</addon>
 
