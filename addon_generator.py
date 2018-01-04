@@ -84,6 +84,7 @@ class Generator:
                     _file = os.path.join(_dir, addon)
                     addon_zip = zipfile.ZipFile(_file, 'w')
                     for addon_root, dirs, files in os.walk(addon):
+                        addon_icon_found = False
                         dirs[:] = [d for d in dirs if d not in EXCLUDES]
                         for filename in files:
                             if os.path.basename(filename)[0:1] == '.' or os.path.basename(filename)[-3:] == 'pyo' \
@@ -91,6 +92,9 @@ class Generator:
                                 continue
                             if os.path.basename(filename) == 'changelog.txt':
                                 shutil.copyfile(os.path.join(addon_root, filename), os.path.join(_dir, 'changelog.txt'))
+                            if os.path.basename(filename) == 'icon.png' and not addon_icon_found:
+                                shutil.copyfile(os.path.join(addon_root, filename), os.path.join(_dir, 'icon.png'))
+                                addon_icon_found = True
                             if os.path.basename(filename) == 'addon.xml':
                                 # parse this
                                 _xmldoc = minidom.parse(os.path.join(addon_root, filename))
