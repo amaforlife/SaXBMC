@@ -400,7 +400,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="script.service.gto" name="German Telecast Offers" version="2.1.0" provider-name="Birger Jesch">
+	<addon id="script.service.gto" name="German Telecast Offers" version="2.1.1" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
@@ -431,7 +431,7 @@
 	        <email>birger.jesch@gmail.com</email>
 	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
 	        <news>
-	            - Scraper for TVGuide UK added[CR]- Smaller Bugfixes[CR]- Support for Estuary Mod V2 (Kodi 18)[CR]- Recording capabilities added, some new tv/sports scrapers added
+	            - 2.1.1: minor Bugfixes, new time structures[CR]- 2.0.29: Scraper for TVGuide UK added[CR]- Smaller Bugfixes[CR]- Support for Estuary Mod V2 (Kodi 18)[CR]- Recording capabilities added, some new tv/sports scrapers added
 	        </news>
 	        <assets>
 	            <icon>icon.png</icon>
