@@ -214,7 +214,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.service.gto" name="German Telecast Offers" version="2.1.2" provider-name="Birger Jesch">
+	<addon id="script.service.gto" name="German Telecast Offers" version="2.1.3" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
@@ -245,7 +245,8 @@
 	        <email>birger.jesch@gmail.com</email>
 	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
 	        <news>
-	            - 2.1.1: minor Bugfixes, new time structures[CR]- 2.0.29: Scraper for TVGuide UK added[CR]- Smaller Bugfixes[CR]- Support for Estuary Mod V2 (Kodi 18)[CR]- Recording capabilities added, some new tv/sports scrapers added
+	- 2.1.3: Scraper updated (TV Spielfilm)
+	- 2.1.1: minor Bugfixes, new time structures[CR]- 2.0.29: Scraper for TVGuide UK added[CR]- Smaller Bugfixes[CR]- Support for Estuary Mod V2 (Kodi 18)[CR]- Recording capabilities added, some new tv/sports scrapers added
 	        </news>
 	        <assets>
 	            <icon>icon.png</icon>
@@ -272,8 +273,12 @@
 	                    <label>30040</label>
 	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
 	                </item>
-	                <item library="deltimer.py">
+	                <item library="handler.py">
 	                    <label>30041</label>
+	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
+	                </item>
+	                <item library="deltimer.py">
+	                    <label>30042</label>
 	                    <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
 	                </item>
 	            </menu>
@@ -458,8 +463,8 @@
 	    <summary lang="en">PVR Recording &amp; Power Manager</summary>
 	    <summary lang="de">PVR Recording &amp; Power Manager</summary>
 	    <summary lang="pl">PVR Recording &amp; Power Manager</summary>
-	    <description lang="en">Recording and power management for current active recordings and wakeup procedures for future schedules using JSON-RPC. Prevents shutdown/poweroff the system while an active schedule is running. Delivers optional Emails via SMTP if an automatic scheduled recording ended successfully. Ability to start the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
-	    <description lang="de">Power- und Timer-Management für aktuell laufende Aufnahmen sowie Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung von JSON-RPC. Verhindert ein versehentliches Herunterfahren des Systems während einer Aufnahme. Der Dienst versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
+	    <description lang="en">Recording and power management for current active recordings and wakeup procedures for future schedules using JSON-RPC on a standalone HTPC with TV card and a PVR server. Prevents shutdown/poweroff the system while an active schedule is running. Delivers optional Emails via SMTP if an automatic scheduled recording ended successfully. Ability to start the system periodically on an user defined cycle and time for e.g. EPG-Updates if there is a longer inactivity time of the system.</description>
+	    <description lang="de">Power- und Timer-Management für aktuell laufende Aufnahmen sowie Aufweckmechanismen für spätere timergesteuerte Aufnahmen unter Nutzung von JSON-RPC auf einem Standalone-PC mit TV-Karte und PVR-Server. Verhindert ein versehentliches Herunterfahren des Systems während einer Aufnahme. Der Dienst versendet optional Emails via SMTP, wenn eine automatische Aufnahme erfolgreich abgeschlossen wurde. Zusätzlich wird das System zyklisch zu einer einstellbaren Zeit aufgeweckt, um z.B das EPG zu aktualisieren.</description>
 	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Keine Haftung für nicht gesetzte Timer, nicht durchgeführte Aufnahmen und andere Seiteneffekte!</disclaimer>
 	    <disclaimer lang="en">Use at your own risk. No liability for not set timers, lack of recording and other side effects!</disclaimer>
 	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
