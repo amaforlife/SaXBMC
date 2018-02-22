@@ -260,7 +260,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.11">
+	<addon id="service.kn.switchtimer" name="KN Switchtimer Service" provider-name="Birger Jesch" version="2.0.12">
 	    <requires>
 	        <import addon="xbmc.python" version="2.24.0"/>
 	        <import addon="xbmc.json" version="6.20.0"/>
