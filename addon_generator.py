@@ -32,12 +32,13 @@ import shutil
 import hashlib
 from xml.dom import minidom
 
-MY_ADDONS = ['repository.saxbmc', 'script.loungeripper', 'service.fritzbox.callmonitor',
-             'service.sleepy.watchdog', 'service.lgtv.remote', 'service.kn.switchtimer',
-             'script.program.fritzact', 'plugin.video.ipcams', 'script.module.oauth2client',
-             'service.calendar', 'script.helper.bumblebox', 'script.service.caretaker',
-             'script.program.driverselect', 'service.pvr.manager', 'script.service.gto',
-             'script.homematic.sonoff']
+MY_ADDONS = ['plugin.video.ipcams',
+             'repository.saxbmc',
+             'script.helper.bumblebox', 'script.homematic.sonoff', 'script.loungeripper', 'script.module.oauth2client',
+             'script.program.driverselect', 'script.program.fritzact', 'script.service.caretaker', 'script.service.gto',
+             'service.calendar', 'service.fritzbox.callmonitor', 'service.kn.switchtimer', 'service.lgtv.remote',
+             'service.pvr.manager', 'service.sleepy.watchdog',
+             ]
 
 EXCLUDES = ['.git', '.idea', '.gitattributes']
 BASEDIR = '../addons'
