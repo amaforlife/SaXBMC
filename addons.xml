@@ -386,7 +386,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.calendar" name="KN Calendar Reminder" version="0.0.15" provider-name="Birger Jesch">
+	<addon id="service.calendar" name="KN Calendar Reminder" version="0.0.16" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0"/>
 	    <import addon="script.module.oauth2client" version="4.1.2"/>
@@ -412,6 +412,7 @@
 	    <email>birger.jesch@gmail.com</email>
 	    <source>https://github.com/b-jesch/service.calendar</source>
 	    <news>
+	0.0.16: Setting for max cycles of reminder added[CR]
 	0.0.15: Bugfixes[CR]
 	0.0.10: starttime of current day adjusted to 00:00:00 instead of current time.
 	    </news>
