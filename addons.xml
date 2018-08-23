@@ -304,20 +304,19 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.librespot" name="Librespot" version="9.0.112"
-	       provider-name="Anton Voyl (awiouy) modified by Birger Jesch">
-	    <requires>
-	        <import addon="os.libreelec.tv" version="9.0"/>
-	        <import addon="xbmc.python" version="2.1.0"/>
+	<addon id="service.librespot" name="Librespot (x86)" version="9.0.111j" provider-name="Anton Voyl (awiouy)">
+	  <requires>
+	    <import addon="os.libreelec.tv" version="9.0"/>
+	    <import addon="xbmc.python" version="2.1.0"/>
 	
-	    </requires>
-	    <extension point="xbmc.service" library="default.py">
-	        <provides></provides>
-	    </extension>
-	    <extension point="xbmc.python.library" library="addon.py">
-	        <provides></provides>
-	    </extension>
-	    <extension point="xbmc.addon.metadata">
+	  </requires>
+	  <extension point="xbmc.service" library="default.py">
+	    <provides></provides>
+	  </extension>
+	  <extension point="xbmc.python.library" library="addon.py">
+	    <provides></provides>
+	  </extension>
+	  <extension point="xbmc.addon.metadata">
 	        <summary lang="en_GB">Play Spotify through LibreELEC using a Spotify app as a remote</summary>
 	        <summary lang="de_DE">Spielt Spotify Songs über LibreElec unter Nutzung einer Spotify App als Fernbedienung ab.
 	        </summary>
@@ -325,12 +324,19 @@
 	        </description>
 	        <description lang="de_DE">Librespot (431be9e) spielt Spotify Songs über LibreELEC als Ausgabegerät unter Nutzung der Open Source Bibliothek von Librespot und einer Spotify App als Fernbedienung ab. Es wird ein Premium Account von Spotify benötigt.
 	        </description>
-	        <disclaimer>
-	        </disclaimer>
-	        <platform>all</platform>
-	        <news>
+	    <disclaimer>
+	
+	    </disclaimer>
+	    <platform>all</platform>
+	    <news>
 	112
-	- extensive code modifications
+	- Update to a4e0f58
+	- Rework Python
+	- Correct codec in Kodi mode
+	- Fix setting change
+	- Fix wizard
+	- Fix zapping issue
+	- Update album, artist and title in Kodi mode
 	
 	111
 	- Update to 431be9e
@@ -376,12 +382,13 @@
 	
 	100
 	- Initial addon
-	        </news>
-	        <assets>
-	            <icon>resources/icon.png</icon>
-	            <fanart>resources/fanart.png</fanart>
-	        </assets>
-	    </extension>
+	    </news>
+	    <assets>
+	      <icon>resources/icon.png</icon>
+	      <fanart>resources/fanart.png</fanart>
+	
+	    </assets>
+	  </extension>
 	</addon>
 
 	<addon id="script.helper.bumblebox" name="Bumblebox" version="0.1.5" provider-name="Birger Jesch">
