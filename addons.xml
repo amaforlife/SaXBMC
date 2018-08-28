@@ -304,7 +304,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.librespot" name="Librespot (x86)" version="9.0.111j" provider-name="Anton Voyl (awiouy)">
+	<addon id="service.librespot" name="Librespot (x86)" version="9.0.111l" provider-name="Anton Voyl (awiouy)">
 	  <requires>
 	    <import addon="os.libreelec.tv" version="9.0"/>
 	    <import addon="xbmc.python" version="2.1.0"/>
