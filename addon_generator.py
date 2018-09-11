@@ -33,7 +33,7 @@ import hashlib
 from xml.dom import minidom
 
 MY_ADDONS = ['plugin.video.ipcams', 'repository.saxbmc', 'script.helper.bumblebox', 'script.homematic.sonoff',
-             'script.loungeripper', 'script.module.oauth2client', 'script.program.driverselect',
+             'script.loungeripper', 'script.module.oauth2client', 'script.program.driverselect', 'script.input.adsp',
              'script.program.fritzact', 'script.service.caretaker', 'script.service.gto', 'service.calendar',
              'service.fritzbox.callmonitor', 'service.kn.switchtimer', 'service.lgtv.remote', 'service.librespot',
              'service.pvr.manager', 'service.sleepy.watchdog',
