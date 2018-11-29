@@ -144,7 +144,7 @@
 	    </extension>
 	</addon>
 
-	<addon id="service.pvr.manager" name="PVR Recording &amp; Power Manager" version="0.0.17" provider-name="Birger Jesch">
+	<addon id="service.pvr.manager" name="PVR Recording &amp; Power Manager" version="0.0.18" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
@@ -168,6 +168,7 @@
 	    <email>birger.jesch@gmail.com</email>
 	    <source>https://github.com/b-jesch/service.pvr.manager</source>
 	    <news>
+	0.0.18 Time calculation bug fixed
 	0.0.17 Ignore timers if they are in the past (VDR), add suspend mode in shutdown method by OS
 	0.0.16 Some setting defaults redefined
 	0.0.15 Bugfix: Handle empty values in os-release on some platforms
@@ -306,7 +307,10 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.librespot" name="Librespot (x86)" version="9.0.111l" provider-name="Anton Voyl (awiouy)">
+	<addon id="service.librespot"
+	       name="Librespot"
+	       version="9.0.113"
+	       provider-name="Anton Voyl (awiouy)">
 	  <requires>
 	    <import addon="os.libreelec.tv" version="9.0"/>
 	    <import addon="xbmc.python" version="2.1.0"/>
@@ -319,18 +323,18 @@
 	    <provides></provides>
 	  </extension>
 	  <extension point="xbmc.addon.metadata">
-	        <summary lang="en_GB">Play Spotify through LibreELEC using a Spotify app as a remote</summary>
-	        <summary lang="de_DE">Spielt Spotify Songs über LibreElec unter Nutzung einer Spotify App als Fernbedienung ab.
-	        </summary>
-	        <description lang="en_GB">Librespot (431be9e) plays Spotify through LibreELEC as sound device using the open source librespot library and using a Spotify app as a remote. Premium account of Spotify needed.
-	        </description>
-	        <description lang="de_DE">Librespot (431be9e) spielt Spotify Songs über LibreELEC als Ausgabegerät unter Nutzung der Open Source Bibliothek von Librespot und einer Spotify App als Fernbedienung ab. Es wird ein Premium Account von Spotify benötigt.
-	        </description>
+	    <summary>Librespot: play Spotify through LibreELEC using a Spotify app as a remote</summary>
+	    <description>
+	Librespot (96557b4ec1c45413cdf34673695f1269f99e3545) plays Spotify through LibreELEC using the open source librespot library using a Spotify app as a remote.
+	    </description>
 	    <disclaimer>
 	
 	    </disclaimer>
 	    <platform>all</platform>
 	    <news>
+	113
+	- Update to 96557b4
+	
 	112
 	- Update to a4e0f58
 	- Rework Python
@@ -338,7 +342,8 @@
 	- Fix setting change
 	- Fix wizard
 	- Fix zapping issue
-	- Update album, artist and title in Kodi mode
+	- Display album, artist, icon and title
+	- Wait for librespot.onevent to finish
 	
 	111
 	- Update to 431be9e
@@ -467,7 +472,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.4" provider-name="Birger Jesch">
+	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.6" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
@@ -491,7 +496,7 @@
 	      <icon>resources/icon.png</icon>
 	      <fanart>resources/fanart.jpg</fanart>
 	    </assets>
-	    <news>- Icons updated[CR]- Sonoff multiswitch implemented</news>
+	    <news>[B]0.0.6:[/B][CR]- class module update[CR][B]0.0.5:[/B][CR]- JSON responses changed due Tasmota firmware updates[CR][B]0.0.4:[/B][CR]- Icons updated[CR]- Sonoff multiswitch implemented</news>
 	  </extension>
 	</addon>
 
