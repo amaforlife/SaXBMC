@@ -24,7 +24,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.20" provider-name="Birger Jesch, Lutz Leonhardt">
+	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.21" provider-name="Birger Jesch, Lutz Leonhardt">
 	  <requires>
 	    <import addon="xbmc.python" version="2.24.0" />
 	    <import addon="xbmc.json" version="6.32.4" />
@@ -310,7 +310,7 @@
 
 	<addon id="service.librespot"
 	       name="Librespot"
-	       version="9.0.113"
+	       version="9.0.114"
 	       provider-name="Anton Voyl (awiouy)">
 	  <requires>
 	    <import addon="os.libreelec.tv" version="9.0"/>
@@ -326,13 +326,17 @@
 	  <extension point="xbmc.addon.metadata">
 	    <summary>Librespot: play Spotify through LibreELEC using a Spotify app as a remote</summary>
 	    <description>
-	Librespot (96557b4ec1c45413cdf34673695f1269f99e3545) plays Spotify through LibreELEC using the open source librespot library using a Spotify app as a remote.
+	Librespot (2018-11-07) plays Spotify through LibreELEC using the open source librespot library using a Spotify app as a remote.
 	    </description>
 	    <disclaimer>
 	
 	    </disclaimer>
 	    <platform>all</platform>
 	    <news>
+	114
+	- Fix discovery mode setting
+	- Start after Kodi
+	
 	113
 	- Update to 96557b4
 	
