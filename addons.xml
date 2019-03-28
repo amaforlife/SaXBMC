@@ -24,7 +24,7 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.22" provider-name="Birger Jesch, Lutz Leonhardt">
+	<addon id="service.fritzbox.callmonitor" name="Fritzbox Callmonitor" version="2.0.23" provider-name="Birger Jesch, Lutz Leonhardt">
 	  <requires>
 	    <import addon="xbmc.python" version="2.24.0" />
 	    <import addon="xbmc.json" version="6.32.4" />
@@ -62,14 +62,14 @@
 	    <disclaimer lang="nl">Gebruik op eigen risico</disclaimer>
 	
 	    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <forum>http://www.vdr-portal.de/board60-linux/board62-software/board95-xbmc/121034-announce-fritz-box-anrufmonitor-f%C3%BCr-xbmc/</forum>
+	    <forum>https://www.kodinerds.net/index.php/Thread/43850-RELEASE-Noch-ein-Addon-f%C3%BCr-die-Fritzbox-Fritzbox-Callmonitor/</forum>
 	    <website></website>
 	    <email>birger.jesch@gmail.com, kontakt@lutzleonhardt.de</email>
 	    <source>https://github.com/b-jesch/service.fritzbox.callmonitor</source>
 	  </extension>
 	</addon>
 
-	<addon id="script.service.gto" name="German Telecast Offers" version="2.1.10" provider-name="Birger Jesch">
+	<addon id="script.service.gto" name="German Telecast Offers" version="2.1.11" provider-name="Birger Jesch">
 	    <requires>
 	        <import addon="xbmc.python" version="2.25.0"/>
 	        <import addon="xbmc.json" version="7.0.0"/>
@@ -100,6 +100,7 @@
 	        <email>birger.jesch@gmail.com</email>
 	        <website>http://vdr4bj1.no-ip.org/index.php?action=list&amp;item=addon</website>
 	        <news>
+	- 2.1.11: HÖRZU scraper module updated[CR]
 	- 2.1.10: Scraper modules updated[CR]
 	- 2.1.8:  Bugfix[CR]
 	- 2.1.7:  Improved startup behaviour[CR]
@@ -316,7 +317,7 @@
 
 	<addon id="service.librespot"
 	       name="Librespot"
-	       version="9.0.114"
+	       version="9.0.115"
 	       provider-name="Anton Voyl (awiouy)">
 	  <requires>
 	    <import addon="os.libreelec.tv" version="9.0"/>
@@ -332,13 +333,16 @@
 	  <extension point="xbmc.addon.metadata">
 	    <summary>Librespot: play Spotify through LibreELEC using a Spotify app as a remote</summary>
 	    <description>
-	Librespot (2018-11-07) plays Spotify through LibreELEC using the open source librespot library using a Spotify app as a remote.
+	Librespot (2019-02-22) plays Spotify through LibreELEC using the open source librespot library using a Spotify app as a remote.
 	    </description>
 	    <disclaimer>
 	
 	    </disclaimer>
 	    <platform>all</platform>
 	    <news>
+	115
+	- Update to daeeeaa (22-02-2019)
+	
 	114
 	- Fix discovery mode setting
 	- Start after Kodi
@@ -483,7 +487,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.7" provider-name="Birger Jesch">
+	<addon id="script.homematic.sonoff" name="Sonoff WLAN Switcher" version="0.0.8" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0" />
 	    <import addon="xbmc.json" version="7.0.0" />
@@ -494,8 +498,12 @@
 	    <platform>all</platform>
 	    <summary lang="en">Switch your devices with Sonoff WLAN modules and Kodi</summary>
 	    <summary lang="de">Schalte Deine Geräte mit den Sonoff WLAN Modulen und Kodi</summary>
-	    <description lang="en">Switch with Kodi your illuminations or devices with the Sonoff WLAN modules. Be a couch potato and control up to eight devices via remote.</description>
-	    <description lang="de">Schalte mit Kodi Deine Beleuchtung oder Deine Geräte mit den Sonoff WLAN Modulen. Sei eine Couchkartoffel und steuere bis zu acht Geräte mit der Fernbedienung.</description>
+	    <description lang="en">Switch with Kodi your illuminations or devices with the Sonoff WLAN modules. Be a couch potato and control up to eight devices via kodi remote.
+	
+	All devices must flashed with Tasmota firmware! See https://github.com/arendst/Sonoff-Tasmota</description>
+	    <description lang="de">Schalte mit Kodi Deine Beleuchtung oder Deine Geräte mit den Sonoff WLAN Modulen. Sei eine Couchkartoffel und steuere bis zu acht Geräte mit der Kodi-Fernbedienung.
+	
+	Alle Geräte müssen mit der Tasmota Firmware geflasht sein! Siehe auch https://github.com/arendst/Sonoff-Tasmota</description>
 	    <disclaimer lang="en">Use at your own risk. It may be necessary to update the firmware of your Sonoff devices.</disclaimer>
 	    <disclaimer lang="de">Benutzung auf eigene Gefahr. Es ist eventuell ein Firmware-Update Ihrer Sonoff-Geräte erforderlich.</disclaimer>
 	    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -507,7 +515,7 @@
 	      <icon>resources/icon.png</icon>
 	      <fanart>resources/fanart.jpg</fanart>
 	    </assets>
-	    <news>[B]0.0.7[/B][CR]- adjustments in Sonoff class module[CR][B]0.0.6:[/B][CR]- class module update[CR][B]0.0.5:[/B][CR]- JSON responses changed due Tasmota firmware updates[CR][B]0.0.4:[/B][CR]- Icons updated[CR]- Sonoff multiswitch implemented</news>
+	    <news>[B]0.0.8[/B][CR]- smaller improvements[CR][B]0.0.7[/B][CR]- adjustments in Sonoff class module[CR][B]0.0.6:[/B][CR]- class module update[CR][B]0.0.5:[/B][CR]- JSON responses changed due Tasmota firmware updates[CR][B]0.0.4:[/B][CR]- Icons updated[CR]- Sonoff multiswitch implemented</news>
 	  </extension>
 	</addon>
 
