@@ -33,12 +33,17 @@ import hashlib
 from xml.dom import minidom
 
 '''
+#############################################
+####                                     ####
 #### START OF THE USER MODIFICATION AREA ####
+####                                     ####
+#############################################
 '''
 
 '''
 This is a list of your addons within the addon directory of your running kodi installation. These are also
-your addons which should deployed to your repository on github. Modify the list to your needs.
+your addons which should deployed to your repository on github. Modify the list to your needs. At least the
+repository itself should be included in this list.
 '''
 
 MY_ADDONS = ['plugin.video.ipcams', 'repository.saxbmc', 'script.helper.bumblebox', 'script.homematic.sonoff',
@@ -81,7 +86,11 @@ The extension of your zipped addon. This should'nt be changed.
 ZIPEXT = '.zip'
 
 '''
-#### END OF MODIFICATION AREA ####
+###########################################
+####                                   ####
+#### END OF THE USER MODIFICATION AREA ####
+####                                   ####
+###########################################
 '''
 
 # Compatibility with 3.0, 3.1 and 3.2 not supporting u"" literals
