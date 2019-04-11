@@ -32,6 +32,15 @@ import shutil
 import hashlib
 from xml.dom import minidom
 
+'''
+#### START OF THE USER MODIFICATION AREA ####
+'''
+
+'''
+This is a list of your addons within the addon directory of your running kodi installation. These are also
+your addons which should deployed to your repository on github. Modify the list to your needs.
+'''
+
 MY_ADDONS = ['plugin.video.ipcams', 'repository.saxbmc', 'script.helper.bumblebox', 'script.homematic.sonoff',
              'script.loungeripper', 'script.module.oauth2client', 'script.program.driverselect', 'script.input.adsp',
              'script.program.fritzact', 'script.service.caretaker', 'script.service.gto', 'service.calendar',
@@ -39,11 +48,41 @@ MY_ADDONS = ['plugin.video.ipcams', 'repository.saxbmc', 'script.helper.bumblebo
              'service.pvr.manager', 'service.sleepy.watchdog',
              ]
 
+'''
+Files/folders that should exclude from repository file system.
+'''
+
 EXCLUDES = ['.git', '.idea', '.gitattributes']
+
+'''
+The base directory of your running kodi installation. You could use relative or absolute paths depending on
+your installation. This script must have access to the base folder. Also check the access permissions of the
+content. 
+'''
+
 BASEDIR = '../addons'
+
+'''
+The working directory where the addon.xml and the checksum file (md5) of your repository resides 
+'''
+
 WORKINGDIR = os.getcwd()
+
+'''
+The directory of the zipped repository addons. This folder resides within the repository normally. If you start
+with a fresh installation of your repo, clear the content of this folder.
+'''
+
 ZIPDIR = 'zip'
+
+'''
+The extension of your zipped addon. This should'nt be changed.
+'''
 ZIPEXT = '.zip'
+
+'''
+#### END OF MODIFICATION AREA ####
+'''
 
 # Compatibility with 3.0, 3.1 and 3.2 not supporting u"" literals
 if sys.version < '3':
