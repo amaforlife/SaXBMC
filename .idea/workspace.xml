@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Internal adjustments of EPG settings for service.pvr.manager" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1562151347171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addon_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#1089#1098#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/addon_generator.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="3839" />
+    <option name="y" value="-11" />
+    <option name="width" value="1922" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
+              <item name="zip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
+              <item name="zip" type="462c0819:PsiDirectoryNode" />
+              <item name="service.pvr.manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/skin.estuary.modv2_gto" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="addon_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SaXBMC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/addon_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.addon_generator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="" />
+      <created>1523967932498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523967932498</updated>
+      <workItem from="1550481553122" duration="721000" />
+      <workItem from="1550560403261" duration="19000" />
+      <workItem from="1550820235410" duration="677000" />
+      <workItem from="1551684330694" duration="16000" />
+      <workItem from="1553774186577" duration="246000" />
+      <workItem from="1554378067060" duration="59000" />
+      <workItem from="1554963629062" duration="6010000" />
+      <workItem from="1556000888619" duration="57000" />
+      <workItem from="1558513529800" duration="820000" />
+      <workItem from="1559543554779" duration="10000" />
+      <workItem from="1559543927306" duration="688000" />
+      <workItem from="1559714074194" duration="638000" />
+      <workItem from="1560317991935" duration="643000" />
+      <workItem from="1561530494317" duration="254000" />
+      <workItem from="1562139589140" duration="14000" />
+      <workItem from="1562151345007" duration="447000" />
+      <workItem from="1563347520213" duration="56000" />
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1523968159153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523968159154</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[script.service.gto] update">
+      <created>1524136763562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524136763562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[script.service.gto] update">
+      <created>1524566089038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524566089038</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[service.pvr.manager] Some setting defaults redefined">
+      <created>1525258516885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525258516885</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[service.fritzbox.callmonitor] Image storage rewritten">
+      <created>1525680814187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525680814187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[service.fritzbox.callmonitor] Bugfix">
+      <created>1525756632228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525756632228</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[service.pvr.manager] Ignore timers if they are in the past (VDR), add suspend mode in shutdown method by OS">
+      <created>1528183033104</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528183033104</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[script.service.gto] Bugfixing">
+      <created>1528788835722</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528788835722</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Bugfixing">
+      <created>1533111933151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533111933151</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Bugfixing">
+      <created>1533274523121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1533274523121</updated>
+    </task>
+    <task id="LOCAL-00011" summary="service.librespot added">
+      <created>1534760764215</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1534760764215</updated>
+    </task>
+    <task id="LOCAL-00012" summary="service.librespot added">
+      <created>1534760993609</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534760993609</updated>
+    </task>
+    <task id="LOCAL-00013" summary="service.librespot updated">
+      <created>1535020038268</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1535020038268</updated>
+    </task>
+    <task id="LOCAL-00014" summary="service.librespot updated">
+      <created>1535438354515</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535438354515</updated>
+    </task>
+    <task id="LOCAL-00015" summary="service.librespot updated">
+      <created>1535453142209</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535453142209</updated>
+    </task>
+    <task id="LOCAL-00016" summary="service.fritzbox.callmonitor version bump">
+      <created>1535527209292</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535527209292</updated>
+    </task>
+    <task id="LOCAL-00017" summary="service.fritzbox.callmonitor version bump">
+      <created>1535527280226</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1535527280226</updated>
+    </task>
+    <task id="LOCAL-00018" summary="introducing script.input.adsp">
+      <created>1536649735886</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536649735886</updated>
+    </task>
+    <task id="LOCAL-00019" summary="script.input.adsp icon changed">
+      <created>1536656041968</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536656041968</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updates">
+      <created>1543494936911</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1543494936912</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updates">
+      <created>1544532258157</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1544532258157</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updates">
+      <created>1544607363890</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1544607363890</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updates">
+      <created>1544608729554</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1544608729555</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updates">
+      <created>1544614800592</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1544614800592</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updates">
+      <created>1545057065695</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1545057065695</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updates">
+      <created>1545057157439</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1545057157439</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updates: script.homatic.sonoff">
+      <created>1545383372118</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1545383372118</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updates">
+      <created>1545383396512</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1545383396512</updated>
+    </task>
+    <task id="LOCAL-00029" summary="scraper modules update (script.service.gto)">
+      <created>1546848105745</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1546848105745</updated>
+    </task>
+    <task id="LOCAL-00030" summary="scraper modules update (script.service.gto)">
+      <created>1550481601326</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1550481601326</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update (service.fritzbox.callmonitor)">
+      <created>1550820308019</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1550820308019</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Updates">
+      <created>1553774312699</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1553774312699</updated>
+    </task>
+    <task id="LOCAL-00033" summary="readme.md created, generator modified.">
+      <created>1554967364897</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1554967364898</updated>
+    </task>
+    <task id="LOCAL-00034" summary="readme.md created, generator modified.">
+      <created>1554973150334</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1554973150334</updated>
+    </task>
+    <task id="LOCAL-00035" summary="script.video.binge added">
+      <created>1558513692193</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1558513692193</updated>
+    </task>
+    <task id="LOCAL-00036" summary="script.video.binge update">
+      <created>1559543968839</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1559543968840</updated>
+    </task>
+    <task id="LOCAL-00037" summary="script.video.binge update">
+      <created>1559544003463</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1559544003463</updated>
+    </task>
+    <task id="LOCAL-00038" summary="script.video.binge update">
+      <created>1559714109816</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1559714109816</updated>
+    </task>
+    <task id="LOCAL-00039" summary="script.video.binge update">
+      <created>1560318032660</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1560318032660</updated>
+    </task>
+    <task id="LOCAL-00040" summary="cosmetics">
+      <created>1561530599927</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1561530599927</updated>
+    </task>
+    <task id="LOCAL-00041" summary="script.video.binge update">
+      <created>1561530731798</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1561530731798</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Internal adjustments of EPG settings for service.pvr.manager">
+      <created>1562151408614</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1562151408614</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11375000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="3840" y="-4" width="1920" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25827107" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" weight="0.32810867" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50248754" side_tool="true" weight="0.32845187" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" weight="0.31452456" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.498618" weight="0.32672232" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <MESSAGE value="[script.service.gto] update" />
+    <MESSAGE value="[service.pvr.manager] Some setting defaults redefined" />
+    <MESSAGE value="[service.fritzbox.callmonitor] Image storage rewritten" />
+    <MESSAGE value="[service.fritzbox.callmonitor] Bugfix" />
+    <MESSAGE value="[service.pvr.manager] Ignore timers if they are in the past (VDR), add suspend mode in shutdown method by OS" />
+    <MESSAGE value="[script.service.gto] Bugfixing" />
+    <MESSAGE value="Bugfixing" />
+    <MESSAGE value="service.librespot added" />
+    <MESSAGE value="service.librespot updated" />
+    <MESSAGE value="service.fritzbox.callmonitor version bump" />
+    <MESSAGE value="introducing script.input.adsp" />
+    <MESSAGE value="script.input.adsp icon changed" />
+    <MESSAGE value="Updates: script.homatic.sonoff" />
+    <MESSAGE value="scraper modules update (script.service.gto)" />
+    <MESSAGE value="update (service.fritzbox.callmonitor)" />
+    <MESSAGE value="Updates" />
+    <MESSAGE value="readme.md created, generator modified." />
+    <MESSAGE value="script.video.binge added" />
+    <MESSAGE value="cosmetics" />
+    <MESSAGE value="script.video.binge update" />
+    <MESSAGE value="Internal adjustments of EPG settings for service.pvr.manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Internal adjustments of EPG settings for service.pvr.manager" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1563434342077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="7" column="192" selection-start-line="7" selection-start-column="192" selection-end-line="7" selection-end-column="192" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addon_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1089#1098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
