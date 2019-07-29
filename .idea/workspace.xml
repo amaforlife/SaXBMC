@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Internal adjustments of EPG settings for service.pvr.manager" />
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Updates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addon_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="594">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#1089#1098#0" expanded="true" />
@@ -39,17 +41,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3839" />
-    <option name="y" value="-11" />
-    <option name="width" value="1922" />
-    <option name="height" value="1092" />
+    <option name="x" value="1985" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -62,22 +63,23 @@
               <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
               <item name="zip" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
-              <item name="zip" type="462c0819:PsiDirectoryNode" />
-              <item name="service.pvr.manager" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/skin.estuary.modv2_gto" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -148,6 +150,8 @@
       <workItem from="1562139589140" duration="14000" />
       <workItem from="1562151345007" duration="447000" />
       <workItem from="1563347520213" duration="56000" />
+      <workItem from="1563434336299" duration="715000" />
+      <workItem from="1564037568606" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1523968159153</created>
@@ -443,22 +447,28 @@
       <option name="project" value="LOCAL" />
       <updated>1562151408614</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Updates">
+      <created>1563434427299</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1563434427301</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11375000" />
+    <option name="totallyTimeSpent" value="14719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3840" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="3839" y="-4" width="1922" height="1085" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25827107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26414087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" weight="0.32810867" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" weight="0.32721713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -466,8 +476,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50248754" side_tool="true" weight="0.32845187" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" weight="0.31452456" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.498618" weight="0.32672232" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" weight="0.3138686" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.498618" visible="true" weight="0.32619774" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -496,16 +506,16 @@
     <MESSAGE value="Updates: script.homatic.sonoff" />
     <MESSAGE value="scraper modules update (script.service.gto)" />
     <MESSAGE value="update (service.fritzbox.callmonitor)" />
-    <MESSAGE value="Updates" />
     <MESSAGE value="readme.md created, generator modified." />
     <MESSAGE value="script.video.binge added" />
     <MESSAGE value="cosmetics" />
     <MESSAGE value="script.video.binge update" />
     <MESSAGE value="Internal adjustments of EPG settings for service.pvr.manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Internal adjustments of EPG settings for service.pvr.manager" />
+    <MESSAGE value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1563434342077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1564407817915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -523,7 +533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addon_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="594">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#1089#1098#0" expanded="true" />
