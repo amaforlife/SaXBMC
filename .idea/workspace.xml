@@ -18,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addon_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
+            <state relative-caret-position="882">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#1089#1098#0" expanded="true" />
@@ -160,6 +160,7 @@
       <workItem from="1564037568606" duration="2629000" />
       <workItem from="1564407814139" duration="133000" />
       <workItem from="1564468236431" duration="24000" />
+      <workItem from="1564468505204" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1523968159153</created>
@@ -476,17 +477,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564407902578</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Updates">
+      <created>1564468539697</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1564468539697</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14876000" />
+    <option name="totallyTimeSpent" value="15516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27031508" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27363184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -499,7 +507,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50248754" side_tool="true" weight="0.32845187" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" visible="true" weight="0.3058104" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" weight="0.3051882" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.498618" weight="0.32553408" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -538,7 +546,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1564468507487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1564989637820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -556,7 +564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addon_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
+        <state relative-caret-position="882">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#1089#1098#0" expanded="true" />

@@ -315,13 +315,14 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.23" provider-name="Birger Jesch">
+	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.24" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.24.0"/>
 	  </requires>
 	  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-	  <extension point="xbmc.python.script" library="default.py" />
-	  <provides>executable</provides>
+	  <extension point="xbmc.python.script" library="default.py">
+	    <provides>executable</provides>
+	  </extension>
 	  <extension point="xbmc.addon.metadata">
 	    <platform>all</platform>
 	    <summary lang="en_GB">Sleepy Watchdog - he's watching while You sleep</summary>
@@ -338,6 +339,20 @@
 	    <website>http://vdr4bj1.no-ip.org</website>
 	    <email>birger.jesch@gmail.com</email>
 	    <source>https://github.com/b-jesch/service.sleepy.watchdog</source>
+	    <news>
+	0.1.24
+	- Addon structure modified
+	
+	0.1.23
+	- Introducing quick manual start of idle timers on adon call
+	
+	0.1.20
+	- Ready for Krypton
+	
+	0.1.19
+	- Ukrainian language added
+	- Messaging switched from progress dialog to an intermitted notification as some skins shows the progress dialog too obtrusive.
+	    </news>
 	    <assets>
 	      <icon>resources/media/icon.png</icon>
 	      <fanart>resources/media/fanart.png</fanart>
@@ -347,7 +362,7 @@
 
 	<addon id="service.librespot"
 	       name="Librespot"
-	       version="9.1.900.115"
+	       version="9.1.901.116"
 	       provider-name="Anton Voyl (awiouy)">
 	  <requires>
 	    <import addon="os.libreelec.tv" version="9.1"/>
@@ -357,21 +372,23 @@
 	  <extension point="xbmc.service" library="default.py">
 	    <provides></provides>
 	  </extension>
-	  <extension point="xbmc.python.library" library="addon.py">
-	    <provides></provides>
-	  </extension>
 	  <extension point="xbmc.addon.metadata">
-	    <summary>Librespot: play Spotify through LibreELEC using a Spotify app as a remote</summary>
+	    <summary>Librespot: play Spotify through Kodi using a Spotify app as a remote</summary>
 	    <description>
-	Librespot (2019-02-22) plays Spotify through LibreELEC using the open source librespot library using a Spotify app as a remote.
+	Librespot (2019-06-01) lets you play Spotify through Kodi using a Spotify app as a remote.
 	    </description>
 	    <disclaimer>
 	
 	    </disclaimer>
 	    <platform>all</platform>
 	    <news>
+	116
+	- Update to 4e3576b (2019-06-01)
+	- Only use Kodi
+	- Rework
+	
 	115
-	- Update to daeeeaa (22-02-2019)
+	- Update to daeeeaa (2019-02-22)
 	
 	114
 	- Fix discovery mode setting
