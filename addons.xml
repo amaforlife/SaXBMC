@@ -315,14 +315,14 @@
 	  </extension>
 	</addon>
 
-	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.24" provider-name="Birger Jesch">
+	<addon id="service.sleepy.watchdog" name="Sleepy Watchdog" version="0.1.25" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.24.0"/>
 	  </requires>
-	  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
 	  <extension point="xbmc.python.script" library="default.py">
 	    <provides>executable</provides>
 	  </extension>
+	  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
 	  <extension point="xbmc.addon.metadata">
 	    <platform>all</platform>
 	    <summary lang="en_GB">Sleepy Watchdog - he's watching while You sleep</summary>
@@ -340,6 +340,10 @@
 	    <email>birger.jesch@gmail.com</email>
 	    <source>https://github.com/b-jesch/service.sleepy.watchdog</source>
 	    <news>
+	0.1.25
+	- Some improvements
+	- Ability to reset the user idle timer (quick manual start)
+	
 	0.1.24
 	- Addon structure modified
 	
@@ -362,7 +366,7 @@
 
 	<addon id="service.librespot"
 	       name="Librespot"
-	       version="9.1.901.116"
+	       version="9.1.901.117"
 	       provider-name="Anton Voyl (awiouy)">
 	  <requires>
 	    <import addon="os.libreelec.tv" version="9.1"/>
@@ -375,13 +379,17 @@
 	  <extension point="xbmc.addon.metadata">
 	    <summary>Librespot: play Spotify through Kodi using a Spotify app as a remote</summary>
 	    <description>
-	Librespot (2019-06-01) lets you play Spotify through Kodi using a Spotify app as a remote.
+	Librespot (2019-07-23) lets you play Spotify through Kodi using a Spotify app as a remote.
 	    </description>
 	    <disclaimer>
 	
 	    </disclaimer>
 	    <platform>all</platform>
 	    <news>
+	117
+	- Update to 51a634d (2019-07-23)
+	- Set bit rate to 320 kpbs
+	
 	116
 	- Update to 4e3576b (2019-06-01)
 	- Only use Kodi
