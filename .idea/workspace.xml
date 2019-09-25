@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Update service.fritzbox.callmonitor">
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Update service.sleepy.watchdog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addon_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="-2419">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#1089#1098#0" expanded="true" />
@@ -51,7 +51,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,10 +69,17 @@
               <item name="zip" type="462c0819:PsiDirectoryNode" />
               <item name="script.video.binge" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
+              <item name="zip" type="462c0819:PsiDirectoryNode" />
+              <item name="service.sleepy.watchdog" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,13 +177,7 @@
       <workItem from="1568288938157" duration="19000" />
       <workItem from="1568290008597" duration="530000" />
       <workItem from="1569306476753" duration="31000" />
-    </task>
-    <task id="LOCAL-00002" summary="[script.service.gto] update">
-      <created>1524136763562</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1524136763562</updated>
+      <workItem from="1569326869766" duration="846000" />
     </task>
     <task id="LOCAL-00003" summary="[script.service.gto] update">
       <created>1524566089038</created>
@@ -515,17 +515,24 @@
       <option name="project" value="LOCAL" />
       <updated>1568268662610</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Update service.sleepy.watchdog">
+      <created>1569326931773</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1569326931773</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19099000" />
+    <option name="totallyTimeSpent" value="19945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31674957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32061914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -575,10 +582,11 @@
     <MESSAGE value="Internal adjustments of EPG settings for service.pvr.manager" />
     <MESSAGE value="Updates" />
     <MESSAGE value="Update service.fritzbox.callmonitor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update service.fritzbox.callmonitor" />
+    <MESSAGE value="Update service.sleepy.watchdog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update service.sleepy.watchdog" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1569326872738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1569393769559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -599,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addon_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="-2419">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#1089#1098#0" expanded="true" />
