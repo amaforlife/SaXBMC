@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Update service.sleepy.watchdog">
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Update service.sleepy.watchdog, Missing strings added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addon_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2419">
+            <state relative-caret-position="18">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#1089#1098#0" expanded="true" />
@@ -51,6 +51,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -67,19 +68,12 @@
               <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
               <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
               <item name="zip" type="462c0819:PsiDirectoryNode" />
-              <item name="script.video.binge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
-              <item name="zip" type="462c0819:PsiDirectoryNode" />
               <item name="service.sleepy.watchdog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,13 +172,8 @@
       <workItem from="1568290008597" duration="530000" />
       <workItem from="1569306476753" duration="31000" />
       <workItem from="1569326869766" duration="846000" />
-    </task>
-    <task id="LOCAL-00003" summary="[script.service.gto] update">
-      <created>1524566089038</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1524566089038</updated>
+      <workItem from="1569393763797" duration="1047000" />
+      <workItem from="1569832863017" duration="16000" />
     </task>
     <task id="LOCAL-00004" summary="[service.pvr.manager] Some setting defaults redefined">
       <created>1525258516885</created>
@@ -522,17 +511,24 @@
       <option name="project" value="LOCAL" />
       <updated>1569326931773</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Update service.sleepy.watchdog, Missing strings added">
+      <created>1569393806689</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1569393806690</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19945000" />
+    <option name="totallyTimeSpent" value="21008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32061914" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23991156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -583,10 +579,11 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="Update service.fritzbox.callmonitor" />
     <MESSAGE value="Update service.sleepy.watchdog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update service.sleepy.watchdog" />
+    <MESSAGE value="Update service.sleepy.watchdog, Missing strings added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update service.sleepy.watchdog, Missing strings added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1569393769559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1569833249780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -607,7 +604,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addon_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2419">
+        <state relative-caret-position="18">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#1089#1098#0" expanded="true" />
