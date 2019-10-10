@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Update service.sleepy.watchdog, Missing strings added">
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Update service.sleepy.watchdog, new option.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -174,13 +174,8 @@
       <workItem from="1569326869766" duration="846000" />
       <workItem from="1569393763797" duration="1047000" />
       <workItem from="1569832863017" duration="16000" />
-    </task>
-    <task id="LOCAL-00004" summary="[service.pvr.manager] Some setting defaults redefined">
-      <created>1525258516885</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1525258516885</updated>
+      <workItem from="1569833238150" duration="514000" />
+      <workItem from="1570013351079" duration="61000" />
     </task>
     <task id="LOCAL-00005" summary="[service.fritzbox.callmonitor] Image storage rewritten">
       <created>1525680814187</created>
@@ -518,17 +513,24 @@
       <option name="project" value="LOCAL" />
       <updated>1569393806690</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Update service.sleepy.watchdog, new option.">
+      <created>1569833313651</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1569833313652</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21008000" />
+    <option name="totallyTimeSpent" value="21583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23991156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24543947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -555,7 +557,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
     <MESSAGE value="[script.service.gto] update" />
     <MESSAGE value="[service.pvr.manager] Some setting defaults redefined" />
     <MESSAGE value="[service.fritzbox.callmonitor] Image storage rewritten" />
@@ -580,10 +581,11 @@
     <MESSAGE value="Update service.fritzbox.callmonitor" />
     <MESSAGE value="Update service.sleepy.watchdog" />
     <MESSAGE value="Update service.sleepy.watchdog, Missing strings added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update service.sleepy.watchdog, Missing strings added" />
+    <MESSAGE value="Update service.sleepy.watchdog, new option." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update service.sleepy.watchdog, new option." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1569833249780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1570697916076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
