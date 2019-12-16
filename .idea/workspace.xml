@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Hyperion Controller Service added" />
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Hyperion Controller Service 0.0.3 update">
+      <change afterPath="$PROJECT_DIR$/zip/script.service.hypercon/script.service.hypercon-0.0.3.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addon_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/addon_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/addons.xml.md5" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addon_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="301">
+              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
               <folding>
                 <element signature="e#1089#1098#0" expanded="true" />
               </folding>
@@ -49,6 +55,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,13 +78,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../addons/script.program.fritzact" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../addons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,13 +189,11 @@
       <workItem from="1573820431584" duration="81000" />
       <workItem from="1574928827758" duration="58000" />
       <workItem from="1575620116732" duration="745000" />
-    </task>
-    <task id="LOCAL-00009" summary="Bugfixing">
-      <created>1533111933151</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1533111933151</updated>
+      <workItem from="1575960199264" duration="706000" />
+      <workItem from="1576219365860" duration="210000" />
+      <workItem from="1576245656603" duration="550000" />
+      <workItem from="1576483174644" duration="102000" />
+      <workItem from="1576483315406" duration="259000" />
     </task>
     <task id="LOCAL-00010" summary="Bugfixing">
       <created>1533274523121</created>
@@ -527,21 +531,29 @@
       <option name="project" value="LOCAL" />
       <updated>1575620245793</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Hyperion Controller Service 0.0.2 added">
+      <created>1575960248913</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1575960248913</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24774000" />
+    <option name="totallyTimeSpent" value="26601000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3840" y="-4" width="1920" height="1084" extended-state="6" />
+    <frame x="3839" y="-4" width="1922" height="1085" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2716115" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28762007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" weight="0.32721713" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" visible="true" weight="0.32721713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -549,7 +561,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50248754" side_tool="true" weight="0.32845187" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" visible="true" weight="0.28134558" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.498618" weight="0.28077313" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.498618" weight="0.32553408" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -563,8 +575,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[service.pvr.manager] Ignore timers if they are in the past (VDR), add suspend mode in shutdown method by OS" />
-    <MESSAGE value="[script.service.gto] Bugfixing" />
     <MESSAGE value="Bugfixing" />
     <MESSAGE value="service.librespot added" />
     <MESSAGE value="service.librespot updated" />
@@ -588,10 +598,12 @@
     <MESSAGE value="script.service.gto: New and improved skin support for Aeon Nox Silvo, Confluence, Estuary, Estuary MOD V2" />
     <MESSAGE value="some Bugfixes" />
     <MESSAGE value="Hyperion Controller Service added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hyperion Controller Service added" />
+    <MESSAGE value="Hyperion Controller Service 0.0.2 added" />
+    <MESSAGE value="Hyperion Controller Service 0.0.3 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hyperion Controller Service 0.0.3 update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1575960201305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1576483374037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -604,16 +616,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/zip/script.service.gto/fanart.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/zip/script.service.gto/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zip/script.service.hypercon/fanart.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zip/script.service.hypercon/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13068" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addon_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="301">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
           <folding>
             <element signature="e#1089#1098#0" expanded="true" />
           </folding>
