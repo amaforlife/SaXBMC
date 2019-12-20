@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Hyperion Controller Service 0.0.3 update">
+    <list default="true" id="220b5247-aa7b-487e-9267-2fb446084080" name="Default" comment="Hyperion Controller Service 0.0.4 update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addon_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/addon_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/addons.xml.md5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addon_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+            <state relative-caret-position="274">
+              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
                 <element signature="e#1089#1098#0" expanded="true" />
               </folding>
@@ -51,7 +54,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -64,10 +66,17 @@
               <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
               <item name="zip" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SaXBMC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaXBMC" type="462c0819:PsiDirectoryNode" />
+              <item name="zip" type="462c0819:PsiDirectoryNode" />
+              <item name="script.service.hypercon" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,13 +195,9 @@
       <workItem from="1576483315406" duration="562000" />
       <workItem from="1576484184200" duration="2347000" />
       <workItem from="1576568287662" duration="18000" />
-    </task>
-    <task id="LOCAL-00012" summary="service.librespot added">
-      <created>1534760993609</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1534760993609</updated>
+      <workItem from="1576743021267" duration="341000" />
+      <workItem from="1576843616055" duration="251000" />
+      <workItem from="1576844106917" duration="35000" />
     </task>
     <task id="LOCAL-00013" summary="service.librespot updated">
       <created>1535020038268</created>
@@ -530,16 +535,24 @@
       <option name="project" value="LOCAL" />
       <updated>1576484209809</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Hyperion Controller Service 0.0.4 update">
+      <created>1576743088491</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1576743088492</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29269000" />
+    <option name="totallyTimeSpent" value="29896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3840" y="-4" width="1920" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29402348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3036286" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -566,7 +579,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bugfixing" />
     <MESSAGE value="service.librespot added" />
     <MESSAGE value="service.librespot updated" />
     <MESSAGE value="service.fritzbox.callmonitor version bump" />
@@ -591,10 +603,11 @@
     <MESSAGE value="Hyperion Controller Service added" />
     <MESSAGE value="Hyperion Controller Service 0.0.2 added" />
     <MESSAGE value="Hyperion Controller Service 0.0.3 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hyperion Controller Service 0.0.3 update" />
+    <MESSAGE value="Hyperion Controller Service 0.0.4 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hyperion Controller Service 0.0.4 update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1576743029290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SaXBMC$addon_generator.coverage" NAME="addon_generator Coverage Results" MODIFIED="1576844144392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -626,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addon_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+        <state relative-caret-position="274">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="e#1089#1098#0" expanded="true" />
           </folding>

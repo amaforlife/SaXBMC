@@ -526,7 +526,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.service.hypercon" name="Hyperion Controller Service" version="0.0.4" provider-name="Birger Jesch">
+	<addon id="script.service.hypercon" name="Hyperion Controller Service" version="0.0.5" provider-name="Birger Jesch">
 	  <requires>
 	    <import addon="xbmc.python" version="2.25.0"/>
 	    <import addon="script.skin.helper.colorpicker" version="1.0.13"/>
@@ -625,6 +625,36 @@
 	    </assets>
 	    <news>[B]0.0.11[/B][CR]- Busy dialog implemented[CR][B]0.0.10[/B][CR]- changes in sonoff class module[CR][B]0.0.8[/B][CR]- smaller improvements[CR][B]0.0.7[/B][CR]- adjustments in Sonoff class module[CR][B]0.0.6:[/B][CR]- class module update[CR][B]0.0.5:[/B][CR]- JSON responses changed due Tasmota firmware updates[CR][B]0.0.4:[/B][CR]- Icons updated[CR]- Sonoff multiswitch implemented</news>
 	  </extension>
+	</addon>
+
+	<addon id="script.program.fritzact" name="Fritz Smart Home" version="0.0.22" provider-name="Birger Jesch">
+	    <requires>
+	        <import addon="xbmc.python" version="2.24.0" />
+	        <import addon="script.module.requests" version="2.9.1" />
+	    </requires>
+		<extension point="xbmc.python.script" library="default.py">
+			<provides>executable</provides>
+	    </extension>
+	
+	    <extension point="xbmc.addon.metadata">
+	        <platform>all</platform>
+	        <summary lang="en">Switching your home with Kodi</summary>
+	        <summary lang="de">Schalte Dein Zuhause mit Kodi</summary>
+	        <description lang="en">Use your Fritz!DECT switches within Kodi. Control light and switch your devices with FritzDECT actors. Find out about powered-on devices and their power consumption. Make yourself comfortable with a touch of your remote.</description>
+	        <description lang="de">Schalte Deine Fritz!DECT Steckdosen mit Kodi. Steuere Licht und Deine Geräte über FritzDECT Schalter. Informiere Dich über eingeschaltete Geräte und deren Stromverbrauch. Mach' es Dir bequem - mit nur einem Klick auf der Fernbedienung.</description>
+	        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	        <source>https://github.com/b-jesch/script.program.fritzact</source>
+	        <forum>http://www.kodinerds.net/index.php/Thread/52691-RELEASE-Fritz-Smart-Home/</forum>
+	        <email>birger.jesch@gmail.com</email>
+	        <website></website>
+	        <assets>
+	            <icon>icon.png</icon>
+	            <fanart>fanart.jpg</fanart>
+	            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+	            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+	            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+	        </assets>
+	    </extension>
 	</addon>
 
 	<addon id="script.program.driverselect" name="LibreELEC Module Drivers" version="0.1.6" provider-name="Birger Jesch">
